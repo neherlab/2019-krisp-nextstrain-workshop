@@ -1,7 +1,7 @@
 rule all:
     input:
-        auspice_tree = "auspice/tbWalker_tree.json",
-        auspice_meta = "auspice/tbWalker_meta.json"
+        auspice_tree = "auspice/tbWalkerSub_tree.json",
+        auspice_meta = "auspice/tbWalkerSub_meta.json"
 
 # Config variables to be used by rules
 # Parameters are defined within their own rules
@@ -51,18 +51,22 @@ rule refine:
     input:
         tree = rules.tree.output,
         aln = rules.mask.output,
-        metadata = config.meta,
+        metadata = config.meta, # 'data/meta-noUnpub-Mod2.tsv', # metadata = config.meta,
         ref = config.ref
     output:
         tree = "results/tree.nwk",
         node_data = "results/branch_lengths.json",
     params:
-        root = 'min_dev'
+        root = 'min_dev',
+        rate = 1.5E-7,
+        coal = 'opt',
+        yearLim = '2017 1990'
     shell:
         """
         augur refine --tree {input.tree} --alignment {input.aln} --metadata {input.metadata} \
             --output-tree {output.tree} --output-node-data {output.node_data} --vcf-reference {input.ref} \
-            --timetree --root {params.root} 
+            --timetree --root {params.root} --clock-rate {params.rate} --coalescent {params.coal} \
+            --year-bounds {params.yearLim}
         """
 
 rule ancestral:
@@ -107,7 +111,7 @@ rule traits:
     output:
         "results/traits.json"
     params:
-        traits = 'country countrySamp outbreak sublineage undated'
+        traits = 'country countrySamp outbreak sublineage'
     shell:
         'augur traits --tree {input.tree} --metadata {input.meta}'
         ' --columns {params.traits} --output {output}'
@@ -116,8 +120,8 @@ rule seqtraits:
     input:
         align = rules.ancestral.output.vcf_out,
         ref = config.ref,
-        #align = rules.translate.output.vcf_out,
-        #ref = rules.translate.output.vcf_ref,
+        trans_align = rules.translate.output.vcf_out,
+        trans_ref = rules.translate.output.vcf_ref,
         drms = config.drms
     output:
         drm_data = "results/drms.json",
@@ -129,6 +133,8 @@ rule seqtraits:
         augur sequence-traits \
             --ancestral-sequences {input.align} \
             --vcf-reference {input.ref} \
+            --translations {input.trans_align} \
+            --vcf-translate-reference {input.trans_ref} \
             --features {input.drms} \
             --output {output.drm_data} \
             --count {params.count} --label {params.label}

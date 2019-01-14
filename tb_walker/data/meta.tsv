@@ -1,129 +1,129 @@
-strain	accession	date	region	regionSamp	countrySamp	country	sublineage	authors	outbreak	undated	TBType	route
-G00262	G00262	20XX-XX-XX	africa	africa	ethiopia	ethiopia	Gagneux-method1	Gagneux	outlier	undated		
-G00900	G00900	20XX-XX-XX	africa	africa	ghana	ghana	Gagneux-method1	Gagneux	outlier	undated		
-G00152	G00152	20XX-XX-XX	africa	africa	uganda	uganda	Gagneux-method1	Gagneux	outlier	undated		
-G00866	G00866	20XX-XX-XX	africa	africa	tanzania	tanzania	Gagneux-method1	Gagneux	outlier	undated		
-G00872	G00872	20XX-XX-XX	africa	africa	uganda	uganda	Gagneux-method1	Gagneux	outlier	undated		
-G00873	G00873	20XX-XX-XX	africa	africa	uganda	uganda	Gagneux-method1	Gagneux	outlier	undated		
-G00874	G00874	20XX-XX-XX	africa	africa	uganda	uganda	Gagneux-method1	Gagneux	outlier	undated		
-G00524	G00524	2004-XX-XX	africa	europe	switzerland	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated		
-G02024	G02024	2007-XX-XX	africa	europe	switzerland	libya	Gagneux-method1	Gagneux	outlier	dated
-G02071	G02071	2006-XX-XX	africa	europe	switzerland	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G02138	G02138	2007-XX-XX	africa	europe	switzerland	cameroon	Gagneux-method1	Gagneux	outlier	dated
-G02166	G02166	2005-XX-XX	africa	europe	switzerland	cameroon	Gagneux-method1	Gagneux	outlier	dated
-G02492	G02492	2008-XX-XX	africa	europe	switzerland	cameroon	Gagneux-method1	Gagneux	outlier	dated
-G02505	G02505	2002-XX-XX	africa	europe	switzerland	cameroon	Gagneux-method1	Gagneux	outlier	dated
-G02719	G02719	2005-XX-XX	africa	europe	switzerland	cameroon	Gagneux-method1	Gagneux	outlier	dated
-G04038	G04038	2014-05-05	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G05038	G05038	2014-09-11	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G05150	G05150	2014-08-21	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G05165	G05165	2014-08-20	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G05168	G05168	2014-09-02	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G05172	G05172	2014-09-02	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G05173	G05173	2014-09-04	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G05174	G05174	2014-09-09	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G05178	G05178	2014-09-09	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G05179	G05179	2014-09-12	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G05182	G05182	2014-09-12	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G07409	G07409	2013-12-12	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07410	G07410	2014-10-28	africa	africa	cote_d_ivoire	cote_d_ivoire	Gagneux-method1	Gagneux	outlier	dated
-G07416	G07416	2015-08-21	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07417	G07417	2014-09-26	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07422	G07422	2014-10-28	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07424	G07424	2015-04-14	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07425	G07425	2014-10-16	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07426	G07426	2014-09-26	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07428	G07428	2014-06-16	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07430	G07430	2014-11-06	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07431	G07431	2015-07-02	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07432	G07432	2015-06-04	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07434	G07434	2015-06-04	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07435	G07435	2015-07-02	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07436	G07436	2015-07-27	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07437	G07437	2015-06-11	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07438	G07438	2015-08-07	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07439	G07439	2015-07-01	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07440	G07440	2015-08-27	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07442	G07442	2015-03-19	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07457	G07457	2015-06-22	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07459	G07459	2014-09-26	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07491	G07491	2015-07-04	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07492	G07492	2014-11-06	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G07493	G07493	2014-07-02	africa	africa	nigeria	nigeria	Gagneux-method1	Gagneux	outlier	dated
-G25553	AT1	2016-02-03	africa	europe	austria	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25554	AT2	2016-09-03	africa	europe	austria	somalia	Walker	Walker2018	outbreak	dated	pulmonary	bani_waleed
-G25555	Belgium_1	2013-11-03	africa	europe	belgium	djibouti	Walker	Walker2018	outlier	dated
-G25556	Belgium_2	2011-08-03	africa	europe	belgium	somalia	Walker	Walker2018	outlier	dated
-G25557	DE10	2016-03-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary	bani_waleed
-G25558	DE11	2016-05-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25559	DE12	2016-11-03	africa	europe	germany	eritrea	Walker	Walker2018	outbreak	dated	pulmonary
-G25560	DE13	2016-12-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25561	DE14	2016-11-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25562	DE1	2016-03-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25563	DE2	2016-03-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary	bani_waleed
-G25564	DE3	2016-03-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25565	DE4	2016-03-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25566	DE5	2016-07-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25567	DE6	2016-08-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25568	DE7	2016-11-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary	bani_waleed
-G25569	DE8	2016-09-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25570	DE9	2016-05-03	africa	europe	germany	somalia	Walker	Walker2018	outbreak	dated	pulmonary	bani_waleed
-G25571	Djibouti_1	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker	Walker2018	outlier	undated
-G25572	Djibouti_2	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker	Walker2018	outlier	undated
-G25573	Djibouti_3	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker	Walker2018	outlier	undated
-G25574	Djibouti_4	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker	Walker2018	outlier	undated
-G25575	Djibouti_5	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker	Walker2018	outlier	undated
-G25576	Djibouti_6	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker	Walker2018	outlier	undated
-G25577	FI1	2016-10-03	africa	europe	finland	eritrea	Walker	Walker2018	outbreak	dated	pleural	bani_waleed
-G25578	Finland_1	20XX-XX-XX		europe	finland		Walker	Walker2018	outlier	undated
-G25579	Finland_2	20XX-XX-XX	africa	europe	finland	somalia	Walker	Walker2018	outlier	undated
-G25580	Finland_3	20XX-XX-XX	africa	europe	finland	somalia	Walker	Walker2018	outlier	undated
-G25581	FR1	2016-04-03	africa	europe	france	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25582	FR2	2016-10-03	africa	europe	france	sudan	Walker	Walker2018	outbreak	dated	pulmonary
-G25583	Ireland_1	20XX-XX-XX	africa	europe	ireland	somalia	Walker	Walker2018	outlier	undated
-G25584	Italy_1	20XX-XX-XX	africa	europe	italy	ethiopia	Walker	Walker2018	outlier	undated
-G25585	Italy_2	20XX-XX-XX	africa	europe	italy	ethiopia	Walker	Walker2018	outlier	undated
-G25586	Italy_3	20XX-XX-XX	africa	europe	italy	ethiopia	Walker	Walker2018	outlier	undated
-G25587	Netherlands_1	20XX-XX-XX	africa	europe	netherlands	eritrea	Walker	Walker2018	outlier	undated
-G25588	Netherlands_2	20XX-XX-XX	africa	europe	netherlands	somalia	Walker	Walker2018	outlier	undated
-G25589	Netherlands_3	20XX-XX-XX	africa	europe	netherlands	somalia	Walker	Walker2018	outlier	undated
-G25590	Norway_1	20XX-XX-XX	africa	europe	norway	somalia	Walker	Walker2018	outlier	undated
-G25591	Norway_2	20XX-XX-XX	africa	europe	norway	ethiopia	Walker	Walker2018	outlier	undated
-G25592	Norway_3	20XX-XX-XX	africa	europe	norway	ethiopia	Walker	Walker2018	outlier	undated
-G25593	SW1	2015-12-03	africa	europe	switzerland	somalia	Walker	Walker2018	outbreak	dated	lymph	bani_waleed
-G25594	SW2	2016-04-03	africa	europe	switzerland	somalia	Walker	Walker2018	outbreak	dated	pulmonary	bani_waleed
-G25595	SW3	2016-05-03	africa	europe	switzerland	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G25596	SW4	2016-05-03	africa	europe	switzerland	eritrea	Walker	Walker2018	outbreak	dated	pulmonary
-G25597	SW5	2016-06-03	africa	europe	switzerland	ethiopia	Walker	Walker2018	outbreak	dated	pulmonary	bani_waleed
-G25598	SW6	2016-04-03	africa	europe	switzerland	somalia	Walker	Walker2018	outbreak	dated	pulmonary	bani_waleed
-G25599	SW7	2016-08-03	africa	europe	switzerland	ethiopia	Walker	Walker2018	outbreak	dated	pulmonary	bani_waleed
-G25600	SW8	2016-09-03	africa	europe	switzerland	djibouti	Walker	Walker2018	outbreak	dated	pleural	bani_waleed
-G25601	UK1	2017-04-03	africa	europe	united_kingdom	sudan	Walker	Walker2018	outbreak	dated	spinal
-G25602	UK2	20XX-XX-XX	europe	europe	united_kingdom	netherlands	Walker	Walker2018	outlier	undated
-G25603	UK3	20XX-XX-XX	africa	europe	united_kingdom	ethiopia	Walker	Walker2018	outlier	undated
-G25604	UK4	20XX-XX-XX	africa	europe	united_kingdom	eritrea	Walker	Walker2018	outlier	undated
-G25605	UK5	20XX-XX-XX	africa	europe	united_kingdom	somalia	Walker	Walker2018	outlier	undated
-G25606	UK6	20XX-XX-XX	africa	europe	united_kingdom	ethiopia	Walker	Walker2018	outlier	undated
-G25607	UK7	20XX-XX-XX	africa	europe	united_kingdom	eritrea	Walker	Walker2018	outlier	undated
-G25608	UK8	20XX-XX-XX	africa	europe	united_kingdom	ethiopia	Walker	Walker2018	outlier	undated
-G25609	UK9	20XX-XX-XX	africa	europe	united_kingdom	somalia	Walker	Walker2018	outlier	undated
-G25610	SE1	2016-08-03	africa	europe	sweden	somalia	Walker	Walker2018	outbreak	dated	pulmonary
-G22819	SRR5818632	20XX-XX-XX	africa	africa	djibouti	djibouti	Gagneux-method2	Gagneux	outlier	undated
-G22820	SRR5818633	20XX-XX-XX	africa	africa	djibouti	djibouti	Gagneux-method2	Gagneux	outlier	undated
-G15064	SRR2100924	20XX-XX-XX		europe	united_kingdom		Gagneux-method2	Gagneux	outlier	undated
-G15066	SRR2100926	20XX-XX-XX		europe	united_kingdom		Gagneux-method2	Gagneux	outlier	undated
-G15117	SRR2100979	20XX-XX-XX		europe	united_kingdom		Gagneux-method2	Gagneux	outlier	undated
-G15179	SRR2101041	20XX-XX-XX		europe	united_kingdom		Gagneux-method2	Gagneux	outlier	undated
-G15186	SRR2101048	20XX-XX-XX		europe	united_kingdom		Gagneux-method2	Gagneux	outlier	undated
-G13393	ERR551223	20XX-XX-XX		europe	germany		Gagneux-method2	Gagneux	outlier	undated
-G05024	SRR5535702	2014-09-02	africa	africa	kenya	kenya	Gagneux-method2	Gagneux	outlier	dated
-G26474	ERR1200653	20XX-XX-XX	africa	africa	ethiopia	ethiopia	Gagneux-method2	Gagneux	outlier	undated
-G21039	ERR221599	20XX-XX-XX	africa	africa	malawi	malawi	Gagneux-method2	Gagneux	outlier	undated
-G00540	ERR841411	20XX-XX-XX	africa	europe	switzerland	somalia	Gagneux-method2	Gagneux	outlier	undated
-G00546	ERR841417	20XX-XX-XX	africa	europe	switzerland	cote_d_ivoire	Gagneux-method2	Gagneux	outlier	undated
-G22787	SRR5818600	20XX-XX-XX	africa	africa	djibouti	djibouti	Gagneux-method2	Gagneux	outlier	undated
-G22816	SRR5818629	20XX-XX-XX	africa	africa	djibouti	djibouti	Gagneux-method2	Gagneux	outlier	undated
-G22832	SRR5818645	20XX-XX-XX	africa	africa	djibouti	djibouti	Gagneux-method2	Gagneux	outlier	undated
-G22852	SRR5818665	20XX-XX-XX	africa	africa	djibouti	djibouti	Gagneux-method2	Gagneux	outlier	undated
-G13821	ERR552602	20XX-XX-XX		europe	germany		Gagneux-method2	Gagneux	outlier	undated
-G22761	SRR5818574	20XX-XX-XX	africa	africa	djibouti	djibouti	Gagneux-method2	Gagneux	outlier	undated
+strain	accession	date	region	regionSamp	countrySamp	country	background	authors	outbreak	undated	route
+G00262	G00262	20XX-XX-XX	africa	africa	ethiopia	ethiopia	background	Gagneux	non-outbreak	undated	
+G00900	G00900	20XX-XX-XX	africa	africa	ghana	ghana	background	Gagneux	non-outbreak	undated	
+G00152	G00152	20XX-XX-XX	africa	africa	uganda	uganda	background	Gagneux	non-outbreak	undated	
+G00866	G00866	20XX-XX-XX	africa	africa	tanzania	tanzania	background	Gagneux	non-outbreak	undated	
+G00872	G00872	20XX-XX-XX	africa	africa	uganda	uganda	background	Gagneux	non-outbreak	undated	
+G00873	G00873	20XX-XX-XX	africa	africa	uganda	uganda	background	Gagneux	non-outbreak	undated	
+G00874	G00874	20XX-XX-XX	africa	africa	uganda	uganda	background	Gagneux	non-outbreak	undated	
+G00524	G00524	2004-XX-XX	africa	europe	switzerland	cote_d_ivoire	background	Gagneux	non-outbreak	dated	
+G02024	G02024	2007-XX-XX	africa	europe	switzerland	libya	background	Gagneux	non-outbreak	dated
+G02071	G02071	2006-XX-XX	africa	europe	switzerland	nigeria	background	Gagneux	non-outbreak	dated
+G02138	G02138	2007-XX-XX	africa	europe	switzerland	cameroon	background	Gagneux	non-outbreak	dated
+G02166	G02166	2005-XX-XX	africa	europe	switzerland	cameroon	background	Gagneux	non-outbreak	dated
+G02492	G02492	2008-XX-XX	africa	europe	switzerland	cameroon	background	Gagneux	non-outbreak	dated
+G02505	G02505	2002-XX-XX	africa	europe	switzerland	cameroon	background	Gagneux	non-outbreak	dated
+G02719	G02719	2005-XX-XX	africa	europe	switzerland	cameroon	background	Gagneux	non-outbreak	dated
+G04038	G04038	2014-05-05	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G05038	G05038	2014-09-11	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G05150	G05150	2014-08-21	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G05165	G05165	2014-08-20	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G05168	G05168	2014-09-02	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G05172	G05172	2014-09-02	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G05173	G05173	2014-09-04	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G05174	G05174	2014-09-09	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G05178	G05178	2014-09-09	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G05179	G05179	2014-09-12	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G05182	G05182	2014-09-12	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G07409	G07409	2013-12-12	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07410	G07410	2014-10-28	africa	africa	cote_d_ivoire	cote_d_ivoire	background	Gagneux	non-outbreak	dated
+G07416	G07416	2015-08-21	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07417	G07417	2014-09-26	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07422	G07422	2014-10-28	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07424	G07424	2015-04-14	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07425	G07425	2014-10-16	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07426	G07426	2014-09-26	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07428	G07428	2014-06-16	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07430	G07430	2014-11-06	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07431	G07431	2015-07-02	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07432	G07432	2015-06-04	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07434	G07434	2015-06-04	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07435	G07435	2015-07-02	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07436	G07436	2015-07-27	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07437	G07437	2015-06-11	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07438	G07438	2015-08-07	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07439	G07439	2015-07-01	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07440	G07440	2015-08-27	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07442	G07442	2015-03-19	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07457	G07457	2015-06-22	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07459	G07459	2014-09-26	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07491	G07491	2015-07-04	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07492	G07492	2014-11-06	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G07493	G07493	2014-07-02	africa	africa	nigeria	nigeria	background	Gagneux	non-outbreak	dated
+G25553	AT1	2016-02-03	africa	europe	austria	somalia	Walker2018	Walker2018	outbreak	dated
+G25554	AT2	2016-09-03	africa	europe	austria	somalia	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25555	Belgium_1	2013-11-03	africa	europe	belgium	djibouti	Walker2018	Walker2018	non-outbreak	dated
+G25556	Belgium_2	2011-08-03	africa	europe	belgium	somalia	Walker2018	Walker2018	non-outbreak	dated
+G25557	DE10	2016-03-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25558	DE11	2016-05-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated
+G25559	DE12	2016-11-03	africa	europe	germany	eritrea	Walker2018	Walker2018	outbreak	dated
+G25560	DE13	2016-12-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated
+G25561	DE14	2016-11-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated
+G25562	DE1	2016-03-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated
+G25563	DE2	2016-03-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25564	DE3	2016-03-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated
+G25565	DE4	2016-03-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated
+G25566	DE5	2016-07-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated
+G25567	DE6	2016-08-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated
+G25568	DE7	2016-11-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25569	DE8	2016-09-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated
+G25570	DE9	2016-05-03	africa	europe	germany	somalia	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25571	Djibouti_1	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker2018	Walker2018	non-outbreak	undated
+G25572	Djibouti_2	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker2018	Walker2018	non-outbreak	undated
+G25573	Djibouti_3	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker2018	Walker2018	non-outbreak	undated
+G25574	Djibouti_4	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker2018	Walker2018	non-outbreak	undated
+G25575	Djibouti_5	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker2018	Walker2018	non-outbreak	undated
+G25576	Djibouti_6	20XX-XX-XX	africa	africa	djibouti	djibouti	Walker2018	Walker2018	non-outbreak	undated
+G25577	FI1	2016-10-03	africa	europe	finland	eritrea	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25578	Finland_1	20XX-XX-XX		europe	finland		Walker2018	Walker2018	non-outbreak	undated
+G25579	Finland_2	20XX-XX-XX	africa	europe	finland	somalia	Walker2018	Walker2018	non-outbreak	undated
+G25580	Finland_3	20XX-XX-XX	africa	europe	finland	somalia	Walker2018	Walker2018	non-outbreak	undated
+G25581	FR1	2016-04-03	africa	europe	france	somalia	Walker2018	Walker2018	outbreak	dated
+G25582	FR2	2016-10-03	africa	europe	france	sudan	Walker2018	Walker2018	outbreak	dated
+G25583	Ireland_1	20XX-XX-XX	africa	europe	ireland	somalia	Walker2018	Walker2018	non-outbreak	undated
+G25584	Italy_1	20XX-XX-XX	africa	europe	italy	ethiopia	Walker2018	Walker2018	non-outbreak	undated
+G25585	Italy_2	20XX-XX-XX	africa	europe	italy	ethiopia	Walker2018	Walker2018	non-outbreak	undated
+G25586	Italy_3	20XX-XX-XX	africa	europe	italy	ethiopia	Walker2018	Walker2018	non-outbreak	undated
+G25587	Netherlands_1	20XX-XX-XX	africa	europe	netherlands	eritrea	Walker2018	Walker2018	non-outbreak	undated
+G25588	Netherlands_2	20XX-XX-XX	africa	europe	netherlands	somalia	Walker2018	Walker2018	non-outbreak	undated
+G25589	Netherlands_3	20XX-XX-XX	africa	europe	netherlands	somalia	Walker2018	Walker2018	non-outbreak	undated
+G25590	Norway_1	20XX-XX-XX	africa	europe	norway	somalia	Walker2018	Walker2018	non-outbreak	undated
+G25591	Norway_2	20XX-XX-XX	africa	europe	norway	ethiopia	Walker2018	Walker2018	non-outbreak	undated
+G25592	Norway_3	20XX-XX-XX	africa	europe	norway	ethiopia	Walker2018	Walker2018	non-outbreak	undated
+G25593	SW1	2015-12-03	africa	europe	switzerland	somalia	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25594	SW2	2016-04-03	africa	europe	switzerland	somalia	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25595	SW3	2016-05-03	africa	europe	switzerland	somalia	Walker2018	Walker2018	outbreak	dated
+G25596	SW4	2016-05-03	africa	europe	switzerland	eritrea	Walker2018	Walker2018	outbreak	dated
+G25597	SW5	2016-06-03	africa	europe	switzerland	ethiopia	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25598	SW6	2016-04-03	africa	europe	switzerland	somalia	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25599	SW7	2016-08-03	africa	europe	switzerland	ethiopia	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25600	SW8	2016-09-03	africa	europe	switzerland	djibouti	Walker2018	Walker2018	outbreak	dated	bani_waleed
+G25601	UK1	2017-04-03	africa	europe	united_kingdom	sudan	Walker2018	Walker2018	outbreak	dated
+G25602	UK2	20XX-XX-XX	europe	europe	united_kingdom	netherlands	Walker2018	Walker2018	non-outbreak	undated
+G25603	UK3	20XX-XX-XX	africa	europe	united_kingdom	ethiopia	Walker2018	Walker2018	non-outbreak	undated
+G25604	UK4	20XX-XX-XX	africa	europe	united_kingdom	eritrea	Walker2018	Walker2018	non-outbreak	undated
+G25605	UK5	20XX-XX-XX	africa	europe	united_kingdom	somalia	Walker2018	Walker2018	non-outbreak	undated
+G25606	UK6	20XX-XX-XX	africa	europe	united_kingdom	ethiopia	Walker2018	Walker2018	non-outbreak	undated
+G25607	UK7	20XX-XX-XX	africa	europe	united_kingdom	eritrea	Walker2018	Walker2018	non-outbreak	undated
+G25608	UK8	20XX-XX-XX	africa	europe	united_kingdom	ethiopia	Walker2018	Walker2018	non-outbreak	undated
+G25609	UK9	20XX-XX-XX	africa	europe	united_kingdom	somalia	Walker2018	Walker2018	non-outbreak	undated
+G25610	SE1	2016-08-03	africa	europe	sweden	somalia	Walker2018	Walker2018	outbreak	dated
+G22819	SRR5818632	20XX-XX-XX	africa	africa	djibouti	djibouti	background	Gagneux	non-outbreak	undated
+G22820	SRR5818633	20XX-XX-XX	africa	africa	djibouti	djibouti	background	Gagneux	non-outbreak	undated
+G15064	SRR2100924	20XX-XX-XX		europe	united_kingdom		background	Gagneux	non-outbreak	undated
+G15066	SRR2100926	20XX-XX-XX		europe	united_kingdom		background	Gagneux	non-outbreak	undated
+G15117	SRR2100979	20XX-XX-XX		europe	united_kingdom		background	Gagneux	non-outbreak	undated
+G15179	SRR2101041	20XX-XX-XX		europe	united_kingdom		background	Gagneux	non-outbreak	undated
+G15186	SRR2101048	20XX-XX-XX		europe	united_kingdom		background	Gagneux	non-outbreak	undated
+G13393	ERR551223	20XX-XX-XX		europe	germany		background	Gagneux	non-outbreak	undated
+G05024	SRR5535702	2014-09-02	africa	africa	kenya	kenya	background	Gagneux	non-outbreak	dated
+G26474	ERR1200653	20XX-XX-XX	africa	africa	ethiopia	ethiopia	background	Gagneux	non-outbreak	undated
+G21039	ERR221599	20XX-XX-XX	africa	africa	malawi	malawi	background	Gagneux	non-outbreak	undated
+G00540	ERR841411	20XX-XX-XX	africa	europe	switzerland	somalia	background	Gagneux	non-outbreak	undated
+G00546	ERR841417	20XX-XX-XX	africa	europe	switzerland	cote_d_ivoire	background	Gagneux	non-outbreak	undated
+G22787	SRR5818600	20XX-XX-XX	africa	africa	djibouti	djibouti	background	Gagneux	non-outbreak	undated
+G22816	SRR5818629	20XX-XX-XX	africa	africa	djibouti	djibouti	background	Gagneux	non-outbreak	undated
+G22832	SRR5818645	20XX-XX-XX	africa	africa	djibouti	djibouti	background	Gagneux	non-outbreak	undated
+G22852	SRR5818665	20XX-XX-XX	africa	africa	djibouti	djibouti	background	Gagneux	non-outbreak	undated
+G13821	ERR552602	20XX-XX-XX		europe	germany		background	Gagneux	non-outbreak	undated
+G22761	SRR5818574	20XX-XX-XX	africa	africa	djibouti	djibouti	background	Gagneux	non-outbreak	undated

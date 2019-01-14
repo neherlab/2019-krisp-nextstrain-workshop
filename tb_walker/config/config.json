@@ -13,13 +13,15 @@
    "type": "continuous", 
    "key": "num_date"
   },
+  "route": {
+  },
   "country": {
   },
   "countrySamp": {
   },
   "outbreak": {
   },
-  "sublineage": {
+  "background": {
   },
   "Drug_Resistance": {
    "menuItem": "Drug_Resistance", 
@@ -91,11 +93,12 @@
   }
  },
  "geo": [
-   "country"
+   "country", "countrySamp"
  ],
  "filters": [
   "country", 
   "countrySamp",
+  "background", 
   "outbreak", 
   "authors"
  ],

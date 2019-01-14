@@ -4,11 +4,10 @@ region	china	#ffe119
 region	southeast_asia	#911eb4
 
 outbreak	outbreak	#e31a1c
-outbreak	outlier	#1f78b4
+outbreak	non-outbreak	#1f78b4
 
-sublineage	Gagneux-method1	#e31a1c
-sublineage	Walker	#1f78b4
-sublineage	Gagneux-method2	#3cb44b
+background	Walker2018	#e31a1c
+background	background	#1f78b4
 
 countrySamp	switzerland	#e6194b
 countrySamp	austria	#3cb44b
@@ -43,6 +42,13 @@ undated	undated	#e31a1c
 undated	dated	#1f78b4
 
 route	bani_waleed	#1f78b4
+
+Drug_Resistance	0	#4a7be9
+Drug_Resistance	1	#65b9c1
+Drug_Resistance	2	#96d37e
+Drug_Resistance	3	#d4d553
+Drug_Resistance	4	#e29d39
+Drug_Resistance	5	#ff5b30
 
 country	somalia	#e6194b
 country	uganda	#3cb44b
