@@ -1,0 +1,68 @@
+region	africa	#0082c8
+region	europe	#e31a1c
+region	china	#ffe119
+region	southeast_asia	#911eb4
+
+outbreak	outbreak	#e31a1c
+outbreak	outlier	#1f78b4
+
+sublineage	Gagneux-method1	#e31a1c
+sublineage	Walker	#1f78b4
+sublineage	Gagneux-method2	#3cb44b
+
+countrySamp	switzerland	#e6194b
+countrySamp	austria	#3cb44b
+countrySamp	belgium	#ffe119
+countrySamp	germany	#0082c8
+countrySamp	finland	#f58231
+countrySamp	france	#911eb4
+countrySamp	united_kingdom	#46f0f0
+countrySamp	sweden	#f032e6
+countrySamp	ireland	#d2f53c
+countrySamp	italy	#fabebe
+countrySamp	netherlands	#008080
+countrySamp	norway	#e6beff
+
+countrySamp	sierra_leone	#fffac8
+countrySamp	ghana	#808080
+countrySamp	mali	#ffc2b3
+countrySamp	malawi	#b3e6ff
+countrySamp	gambia	#aa6e28
+countrySamp	cote_d_ivoire	#ffd8b1
+countrySamp	tanzania	#800000
+countrySamp	nigeria	#aaffc3
+countrySamp	democratic_republic_of_congo	#808000
+countrySamp	south_africa	#000080
+countrySamp	djibouti	#1a1aff
+countrySamp	ethiopia	#e31a1c
+
+countrySamp	taiwan	#c6ecd9
+countrySamp	kenya	#9494b8
+
+undated	undated	#e31a1c
+undated	dated	#1f78b4
+
+route	bani_waleed	#1f78b4
+
+country	somalia	#e6194b
+country	uganda	#3cb44b
+country	eritrea	#ffe119
+country	sudan	#f58231
+country	cameroon	#911eb4
+country	ethiopia	#46f0f0
+country	libya	#f032e6
+country	netherlands	#008080
+country	liberia	#e6beff
+
+country	sierra_leone	#fffac8
+country	ghana	#808080
+country	mali	#ffc2b3
+country	malawi	#b3e6ff
+country	gambia	#aa6e28
+country	cote_d_ivoire	#ffd8b1
+country	tanzania	#800000
+country	nigeria	#aaffc3
+country	democratic_republic_of_congo	#808000
+country	south_africa	#000080
+country	djibouti	#1a1aff
+country	kenya	#9494b8

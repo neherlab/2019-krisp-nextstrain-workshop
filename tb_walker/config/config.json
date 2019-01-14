@@ -1,0 +1,106 @@
+{ 
+ "title": "TB outbreak in Africa-Europe", 
+ "color_options": {
+  "gt": {
+   "menuItem": "genotype", 
+   "legendTitle": "Genotype", 
+   "type": "discrete", 
+   "key": "genotype"
+  },
+  "num_date": {
+   "menuItem": "date", 
+   "legendTitle": "Sampling date", 
+   "type": "continuous", 
+   "key": "num_date"
+  },
+  "country": {
+  },
+  "countrySamp": {
+  },
+  "outbreak": {
+  },
+  "sublineage": {
+  },
+  "Drug_Resistance": {
+   "menuItem": "Drug_Resistance", 
+   "legendTitle": "Drug Resistance", 
+   "type": "discrete", 
+   "key": "Drug_Resistance"
+  },
+  "Capreomycin": {
+   "menuItem": "Capreomycin", 
+   "legendTitle": "Capreomycin Resistance", 
+   "type": "discrete", 
+   "key": "Capreomycin"
+  },
+  "Ethambutol": {
+   "menuItem": "Ethambutol", 
+   "legendTitle": "Ethambutol Resistance", 
+   "type": "discrete", 
+   "key": "Ethambutol"
+  },
+  "Rifampicin": {
+   "menuItem": "Rifampicin", 
+   "legendTitle": "Rifampicin Resistance", 
+   "type": "discrete", 
+   "key": "Rifampicin"
+  },
+  "Isoniazid": {
+   "menuItem": "Isoniazid", 
+   "legendTitle": "Isoniazid Resistance", 
+   "type": "discrete", 
+   "key": "Isoniazid"
+  },
+  "Ethionamide": {
+   "menuItem": "Ethionamide", 
+   "legendTitle": "Ethionamide Resistance", 
+   "type": "discrete", 
+   "key": "Ethionamide"
+  },
+  "Streptomycin": {
+   "menuItem": "Streptomycin", 
+   "legendTitle": "Streptomycin Resistance", 
+   "type": "discrete", 
+   "key": "Streptomycin"
+  },
+  "Pyrazinamide": {
+   "menuItem": "Pyrazinamide", 
+   "legendTitle": "Pyrazinamide Resistance", 
+   "type": "discrete", 
+   "key": "Pyrazinamide"
+  },
+  "Fluoroquinolones": {
+   "menuItem": "Fluoroquinolones", 
+   "legendTitle": "Fluoroquinolones Resistance", 
+   "type": "discrete", 
+   "key": "Fluoroquinolones"
+  },
+  "Kanamycin": {
+   "menuItem": "Kanamycin", 
+   "legendTitle": "Kanamycin Resistance", 
+   "type": "discrete", 
+   "key": "Kanamycin"
+  },
+  "Amikacin": {
+   "menuItem": "Amikacin", 
+   "legendTitle": "Amikacin Resistance", 
+   "type": "discrete", 
+   "key": "Amikacin"
+  },
+  "undated": {
+  }
+ },
+ "geo": [
+   "country"
+ ],
+ "filters": [
+  "country", 
+  "countrySamp",
+  "outbreak", 
+  "authors"
+ ],
+  "maintainer": [
+    "Emma Hodcroft",
+    "https://neherlab.org/emma-hodcroft.html"
+  ]
+}
