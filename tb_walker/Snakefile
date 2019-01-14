@@ -6,28 +6,30 @@ rule all:
         auspice_meta = "auspice/tbWalkerSub_meta.json"
 
 
-
 # Specify names of data and configuration files that the remaining rules use
-seq = "data/Walker2018_plus_background.vcf.gz",
-meta = "data/meta.tsv",
-ref = "data/ref.fasta",
-
-mask = "config/Locus_to_exclude_Mtb.bed",
-drms = "config/DRMs-AAnuc.tsv",
-sites = "config/drm_sites.txt",
-generef = "config/Mtb_H37Rv_NCBI_Annot.gff",
-genes = "config/genes.txt",
-colors = "config/color.tsv",
-config = "config/config.json",
-geo_info = "config/lat_longs.tsv"
+config.update({
+    # data files
+    "seq": "data/Walker2018_plus_background.vcf.gz",
+    "meta": "data/meta.tsv",
+    "ref": "data/ref.fasta",
+    # config files
+    "mask": "config/Locus_to_exclude_Mtb.bed",
+    "drms": "config/DRMs-AAnuc.tsv",
+    "sites": "config/drm_sites.txt",
+    "generef": "config/Mtb_H37Rv_NCBI_Annot.gff",
+    "genes": "config/genes.txt",
+    "colors": "config/color.tsv",
+    "config": "config/config.json",
+    "geo_info": "config/lat_longs.tsv"
+})
 #end of config definitions
 
 rule mask:
     message:
         "remove a subset of variable positions specified in {input.mask} because they are unsuitable for tree building"
     input:
-        seq = seq,
-        mask = mask
+        seq = config["seq"],
+        mask = config["mask"]
     output:
        "results/masked.vcf.gz"
     shell:
@@ -39,8 +41,8 @@ rule tree:
         "Construct a tree from {input.aln} to generate {output}"
     input:
         aln = rules.mask.output,
-        ref = ref,
-        sites = sites
+        ref = config["ref"],
+        sites = config["sites"]
     output:
         "results/tree_raw.nwk"
     params:
@@ -56,8 +58,8 @@ rule refine:
     input:
         tree = rules.tree.output,
         aln = rules.mask.output,
-        metadata = meta, # 'data/meta-noUnpub-Mod2.tsv', # metadata = meta,
-        ref = ref
+        metadata = config["meta"], # 'data/meta-noUnpub-Mod2.tsv', # metadata = meta,
+        ref = config["ref"]
     output:
         tree = "results/tree.nwk",
         node_data = "results/branch_lengths.json",
@@ -81,7 +83,7 @@ rule ancestral:
     input:
         tree = rules.refine.output.tree,
         alignment = rules.mask.output,
-        ref = ref
+        ref = config["ref"]
     output:
         nt_data = "results/nt_muts.json",
         vcf_out = "results/nt_muts.vcf"
@@ -103,10 +105,10 @@ rule translate:
         "corresponding translations of the reference."
     input:
         tree = rules.refine.output.tree,
-        ref = ref,
-        gene_ref = generef,
+        ref = config["ref"],
+        gene_ref = config["generef"],
         vcf = rules.ancestral.output.vcf_out,
-        genes = genes
+        genes = config["genes"]
     output:
         aa_data = "results/aa_muts.json",
         vcf_out = "results/translations.vcf",
@@ -121,7 +123,7 @@ rule translate:
 rule traits:
     input:
         tree = rules.refine.output.tree,
-        meta = meta
+        meta = config["meta"]
     output:
         "results/traits.json"
     params:
@@ -133,10 +135,10 @@ rule traits:
 rule seqtraits:
     input:
         align = rules.ancestral.output.vcf_out,
-        ref = ref,
+        ref = config["ref"],
         trans_align = rules.translate.output.vcf_out,
         trans_ref = rules.translate.output.vcf_ref,
-        drms = drms
+        drms = config["drms"]
     output:
         drm_data = "results/drms.json",
     params:
@@ -157,15 +159,15 @@ rule seqtraits:
 rule export:
     input:
         tree = rules.refine.output.tree,
-        metadata = meta,
+        metadata = config["meta"],
         branch_lengths = rules.refine.output.node_data,
         traits = rules.traits.output,
         nt_muts = rules.ancestral.output.nt_data,
         aa_muts = rules.translate.output.aa_data,
         drms = rules.seqtraits.output.drm_data,
-        color_defs = colors,
-        config = config,
-        geo_info = geo_info
+        color_defs = config["colors"],
+        config = config["config"],
+        geo_info = config["geo_info"]
     output:
         tree = rules.all.input.auspice_tree,
         meta = rules.all.input.auspice_meta
@@ -178,6 +180,6 @@ rule export:
 rule clean:
 	shell:
 		'''
-		rm auspice/*json &
-		rm results/*
+		rm auspice/*json ||: &
+		rm results/* ||:
 		'''
