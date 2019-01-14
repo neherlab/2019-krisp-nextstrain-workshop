@@ -1,45 +1,46 @@
+# this first rule is the default rule -- it produces the final output
+# by simply typing 'snakemake' on the commandline
 rule all:
     input:
         auspice_tree = "auspice/tbWalkerSub_tree.json",
         auspice_meta = "auspice/tbWalkerSub_meta.json"
 
-# Config variables to be used by rules
-# Parameters are defined within their own rules
 
-rule config:
-    params:
-        seq = "data/Walker2018_plus_background.vcf.gz",
-        meta = "data/meta.tsv",
-        ref = "data/ref.fasta",
 
-        mask = "config/Locus_to_exclude_Mtb.bed",
-        drms = "config/DRMs-AAnuc.tsv",
-        sites = "config/drm_sites.txt",
-        generef = "config/Mtb_H37Rv_NCBI_Annot.gff",
-        genes = "config/genes.txt",
-        colors = "config/color.tsv",
-        config = "config/config.json",
-        geo_info = "config/lat_longs.tsv"
+# Specify names of data and configuration files that the remaining rules use
+seq = "data/Walker2018_plus_background.vcf.gz",
+meta = "data/meta.tsv",
+ref = "data/ref.fasta",
 
-config = rules.config.params 
-#so we can use config.x rather than rules.config.params.x
-
-#end of config definition
+mask = "config/Locus_to_exclude_Mtb.bed",
+drms = "config/DRMs-AAnuc.tsv",
+sites = "config/drm_sites.txt",
+generef = "config/Mtb_H37Rv_NCBI_Annot.gff",
+genes = "config/genes.txt",
+colors = "config/color.tsv",
+config = "config/config.json",
+geo_info = "config/lat_longs.tsv"
+#end of config definitions
 
 rule mask:
+    message:
+        "remove a subset of variable positions specified in {input.mask} because they are unsuitable for tree building"
     input:
-        seq = config.seq,
-        mask = config.mask
+        seq = seq,
+        mask = mask
     output:
        "results/masked.vcf.gz"
     shell:
         "augur mask --sequences {input.seq} --output {output} --mask {input.mask}"
 
+
 rule tree:
+    message:
+        "Construct a tree from {input.aln} to generate {output}"
     input:
         aln = rules.mask.output,
-        ref = config.ref,
-        sites = config.sites
+        ref = ref,
+        sites = sites
     output:
         "results/tree_raw.nwk"
     params:
@@ -47,12 +48,16 @@ rule tree:
     shell:
         'augur tree --exclude-sites {input.sites} --alignment {input.aln} --vcf-reference {input.ref} --output {output} --method {params.method}'
 
+
 rule refine:
+    message:
+        "Use {input.tree} to generate the timetree {output.tree} with a "
+        "fixed molecular clock rate of {params.rate}"
     input:
         tree = rules.tree.output,
         aln = rules.mask.output,
-        metadata = config.meta, # 'data/meta-noUnpub-Mod2.tsv', # metadata = config.meta,
-        ref = config.ref
+        metadata = meta, # 'data/meta-noUnpub-Mod2.tsv', # metadata = meta,
+        ref = ref
     output:
         tree = "results/tree.nwk",
         node_data = "results/branch_lengths.json",
@@ -70,10 +75,13 @@ rule refine:
         """
 
 rule ancestral:
+    message:
+        "Infer ancestral sequence states and map mutations onto the tree. "
+        "Results will be saved in {output.nt_data} and {output.vcf_out}"
     input:
         tree = rules.refine.output.tree,
         alignment = rules.mask.output,
-        ref = config.ref
+        ref = ref
     output:
         nt_data = "results/nt_muts.json",
         vcf_out = "results/nt_muts.vcf"
@@ -87,12 +95,18 @@ rule ancestral:
         """
 
 rule translate:
+    message:
+        "Check whether the nucleotide mutations mapped to the tree change "
+        "annotated proteins and determine the amino acid changes caused. "
+        "The output {output.aa_data} will contain the mapped mutations, "
+        "{output.vcf_out} and {output.vcf_ref} all changes and the "
+        "corresponding translations of the reference."
     input:
         tree = rules.refine.output.tree,
-        ref = config.ref,
-        gene_ref = config.generef,
+        ref = ref,
+        gene_ref = generef,
         vcf = rules.ancestral.output.vcf_out,
-        genes = config.genes
+        genes = genes
     output:
         aa_data = "results/aa_muts.json",
         vcf_out = "results/translations.vcf",
@@ -107,7 +121,7 @@ rule translate:
 rule traits:
     input:
         tree = rules.refine.output.tree,
-        meta = config.meta
+        meta = meta
     output:
         "results/traits.json"
     params:
@@ -119,10 +133,10 @@ rule traits:
 rule seqtraits:
     input:
         align = rules.ancestral.output.vcf_out,
-        ref = config.ref,
+        ref = ref,
         trans_align = rules.translate.output.vcf_out,
         trans_ref = rules.translate.output.vcf_ref,
-        drms = config.drms
+        drms = drms
     output:
         drm_data = "results/drms.json",
     params:
@@ -139,19 +153,19 @@ rule seqtraits:
             --output {output.drm_data} \
             --count {params.count} --label {params.label}
         """
-        
+
 rule export:
     input:
         tree = rules.refine.output.tree,
-        metadata = config.meta,
+        metadata = meta,
         branch_lengths = rules.refine.output.node_data,
         traits = rules.traits.output,
         nt_muts = rules.ancestral.output.nt_data,
         aa_muts = rules.translate.output.aa_data,
         drms = rules.seqtraits.output.drm_data,
-        color_defs = config.colors, 
-        config = config.config,
-        geo_info = config.geo_info
+        color_defs = colors,
+        config = config,
+        geo_info = geo_info
     output:
         tree = rules.all.input.auspice_tree,
         meta = rules.all.input.auspice_meta
@@ -161,3 +175,9 @@ rule export:
             ' --auspice-config {input.config} --colors {input.color_defs} --output-tree {output.tree}'
             ' --lat-longs {input.geo_info} --output-meta {output.meta}'
 
+rule clean:
+	shell:
+		'''
+		rm auspice/*json &
+		rm results/*
+		'''
