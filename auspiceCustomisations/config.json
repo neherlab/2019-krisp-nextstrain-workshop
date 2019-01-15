@@ -1,0 +1,8 @@
+{
+  "entryPage": "datasetLoader",
+  "hardcodedDataPaths": {
+    "mainJSON": "auspice/tb_walker.json"
+  },
+  "navbarComponent": "navbar.js",
+  "browserTitle": "KRISP-Nextstrain workshop"
+}

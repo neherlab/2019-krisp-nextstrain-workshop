@@ -4,6 +4,16 @@ rule all:
     input:
         auspice_tree = "auspice/tbWalkerSub_tree.json",
         auspice_meta = "auspice/tbWalkerSub_meta.json"
+    output:
+        combined_json = "../auspice/tb_walker.json"
+    run:
+        import json
+        with open(input.auspice_meta) as fh_meta, open(input.auspice_tree) as fh_tree:
+            out_json = {'meta':json.load(fh_meta), 'tree':json.load(fh_tree)}
+
+        with open(output.combined_json, 'wt') as fh:
+            json.dump(out_json, fh)
+
 
 
 # Specify names of data and configuration files that the remaining rules use
