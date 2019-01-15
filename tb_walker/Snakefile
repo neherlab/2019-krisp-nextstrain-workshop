@@ -17,29 +17,33 @@ rule all:
 
 
 # Specify names of data and configuration files that the remaining rules use
-config.update({
-    # data files
-    "seq": "data/Walker2018_plus_background.vcf.gz",
-    "meta": "data/meta.tsv",
-    "ref": "data/ref.fasta",
-    # config files
-    "mask": "config/Locus_to_exclude_Mtb.bed",
-    "drms": "config/DRMs-AAnuc.tsv",
-    "sites": "config/drm_sites.txt",
-    "generef": "config/Mtb_H37Rv_NCBI_Annot.gff",
-    "genes": "config/genes.txt",
-    "colors": "config/color.tsv",
-    "config": "config/config.json",
-    "geo_info": "config/lat_longs.tsv"
-})
+
+# data files
+starting_seq = "data/Walker2018_plus_background.vcf.gz",
+metadata = "data/meta.tsv",
+mapping_reference = "data/ref.fasta",
+
+# sequence-related config files
+sites_to_mask = "config/Locus_to_exclude_Mtb.bed",
+drms_to_find = "config/DRMs-AAnuc.tsv",
+sites_to_ignore = "config/drm_sites.txt",
+gene_reference = "config/Mtb_H37Rv_NCBI_Annot.gff",     #file that contains start/end locations for all genes in TB
+genes_to_use = "config/genes.txt",                      #to speed analysis, only use DR-associated genes
+
+# display-related config files
+color_file = "config/color.tsv",
+config_file = "config/config.json",
+geo_file = "config/lat_longs.tsv"
 #end of config definitions
+
+#Start of rules for analysis
 
 rule mask:
     message:
         "remove a subset of variable positions specified in {input.mask} because they are unsuitable for tree building"
     input:
-        seq = config["seq"],
-        mask = config["mask"]
+        seq = starting_seq,
+        mask = sites_to_mask
     output:
        "results/masked.vcf.gz"
     shell:
@@ -48,11 +52,12 @@ rule mask:
 
 rule tree:
     message:
-        "Construct a tree from {input.aln} to generate {output}"
+        "Construct a tree from {input.aln} to generate {output}. "
+        "Sites in {input.sites} will be ignored during this step"
     input:
         aln = rules.mask.output,
-        ref = config["ref"],
-        sites = config["sites"]
+        ref = mapping_reference,
+        sites = sites_to_ignore
     output:
         "results/tree_raw.nwk"
     params:
@@ -64,12 +69,12 @@ rule tree:
 rule refine:
     message:
         "Use {input.tree} to generate the timetree {output.tree} with a "
-        "fixed molecular clock rate of {params.rate}"
+        "fixed molecular clock rate of {params.rate} subs/site/yr"
     input:
         tree = rules.tree.output,
         aln = rules.mask.output,
-        metadata = config["meta"], # 'data/meta-noUnpub-Mod2.tsv', # metadata = meta,
-        ref = config["ref"]
+        meta = metadata,
+        ref = mapping_reference
     output:
         tree = "results/tree.nwk",
         node_data = "results/branch_lengths.json",
@@ -80,7 +85,7 @@ rule refine:
         yearLim = '2017 1990'
     shell:
         """
-        augur refine --tree {input.tree} --alignment {input.aln} --metadata {input.metadata} \
+        augur refine --tree {input.tree} --alignment {input.aln} --metadata {input.meta} \
             --output-tree {output.tree} --output-node-data {output.node_data} --vcf-reference {input.ref} \
             --timetree --root {params.root} --clock-rate {params.rate} --coalescent {params.coal} \
             --year-bounds {params.yearLim}
@@ -93,7 +98,7 @@ rule ancestral:
     input:
         tree = rules.refine.output.tree,
         alignment = rules.mask.output,
-        ref = config["ref"]
+        ref = mapping_reference
     output:
         nt_data = "results/nt_muts.json",
         vcf_out = "results/nt_muts.vcf"
@@ -115,10 +120,10 @@ rule translate:
         "corresponding translations of the reference."
     input:
         tree = rules.refine.output.tree,
-        ref = config["ref"],
-        gene_ref = config["generef"],
+        ref = mapping_reference,
+        gene_ref = gene_reference,
         vcf = rules.ancestral.output.vcf_out,
-        genes = config["genes"]
+        genes = genes_to_use
     output:
         aa_data = "results/aa_muts.json",
         vcf_out = "results/translations.vcf",
@@ -131,24 +136,34 @@ rule translate:
         """
 
 rule traits:
+    message:
+        "Reconstruct the ancestral state of the traits '{params.traits}' on the tree. "
+        "The state for each node and internal node is saved in {output}."
     input:
         tree = rules.refine.output.tree,
-        meta = config["meta"]
+        meta = metadata
     output:
         "results/traits.json"
     params:
-        traits = 'country countrySamp outbreak sublineage'
+        traits = 'country countrySamp'
     shell:
         'augur traits --tree {input.tree} --metadata {input.meta}'
         ' --columns {params.traits} --output {output}'
 
 rule seqtraits:
+    message:
+        "Inspect observed and ancestral sequences to detect the presence of mutations associated "
+        "with certain traits - here, drug resistance. Mutations outside genes are identified from "
+        "reconstructed nucleotide sequences in {input.align}; mutations inside genes are identified by "
+        "amino-acid changes in translated reconstructed sequences in {input.trans_align}. "
+        "The mutations to look for are read from {input.drms}, and the presence of these traits "
+        "in each node is saved in {output}. "
     input:
         align = rules.ancestral.output.vcf_out,
-        ref = config["ref"],
+        ref = mapping_reference,
         trans_align = rules.translate.output.vcf_out,
         trans_ref = rules.translate.output.vcf_ref,
-        drms = config["drms"]
+        drms = drms_to_find
     output:
         drm_data = "results/drms.json",
     params:
@@ -167,25 +182,67 @@ rule seqtraits:
         """
 
 rule export:
+    message:
+        "Gathers up all of the files generated during analysis and combines them "
+        "into the format needed to display the information graphically."
     input:
         tree = rules.refine.output.tree,
-        metadata = config["meta"],
+        meta = metadata,
         branch_lengths = rules.refine.output.node_data,
         traits = rules.traits.output,
         nt_muts = rules.ancestral.output.nt_data,
         aa_muts = rules.translate.output.aa_data,
         drms = rules.seqtraits.output.drm_data,
-        color_defs = config["colors"],
-        config = config["config"],
-        geo_info = config["geo_info"]
+        color_defs = color_file,
+        config = config_file,
+        geo_info = geo_file
     output:
         tree = rules.all.input.auspice_tree,
         meta = rules.all.input.auspice_meta
     shell:
-        'augur export --tree {input.tree} --metadata {input.metadata}'
+        'augur export --tree {input.tree} --metadata {input.meta}'
             ' --node-data {input.branch_lengths} {input.traits} {input.drms} {input.aa_muts} {input.nt_muts}'
             ' --auspice-config {input.config} --colors {input.color_defs} --output-tree {output.tree}'
             ' --lat-longs {input.geo_info} --output-meta {output.meta}'
+
+rule exportv2:
+    message:
+        ""
+    input:
+        tree = rules.refine.output.tree,
+        meta = metadata,
+        branch_lengths = rules.refine.output.node_data,
+        traits = rules.traits.output,
+        nt_muts = rules.ancestral.output.nt_data,
+        aa_muts = rules.translate.output.aa_data,
+        drms = rules.seqtraits.output.drm_data,
+        color_defs = color_file,
+        geo_info = geo_file
+    output:
+        main = "auspice/tbWalkerSub.json"
+    params:
+        title = '\'TB Outbreak in Africa-Europe\'',
+        auth = "'Tim Walker' 'Emma Hodcroft'",
+        url = 'https://www.ncbi.nlm.nih.gov/pubmed/29326013 https://neherlab.org/emma-hodcroft.html',
+        geo = "country countrySamp",
+        extra_traits = "'undated' 'route' 'outbreak' 'background'",
+        # panels = 'tree map entropy frequencies'
+    shell:
+        """
+        augur export \
+            --new-schema \
+            --tree {input.tree} \
+            --metadata {input.meta} \
+            --node-data {input.branch_lengths} {input.traits} {input.aa_muts} {input.nt_muts} \
+            --colors {input.color_defs} \
+            --lat-longs {input.geo_info} \
+            --output-main {output.main} \
+            --title {params.title} \
+            --maintainers {params.auth} \
+            --maintainer-urls {params.url} \
+            --geography-traits {params.geo} \
+            --extra-traits {params.extra_traits} 
+        """
 
 rule clean:
 	shell:
