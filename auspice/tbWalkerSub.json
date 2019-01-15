@@ -8,6 +8,50 @@
     }
   },
   "colorings": {
+    "Capreomycin": {
+      "title": "Capreomycin",
+      "type": "categorical"
+    },
+    "Drug_Resistance": {
+      "scale": {
+        "0": "#4a7be9",
+        "1": "#65b9c1",
+        "2": "#96d37e",
+        "3": "#d4d553",
+        "4": "#e29d39",
+        "5": "#ff5b30"
+      },
+      "title": "Drug_Resistance",
+      "type": "categorical"
+    },
+    "Ethambutol": {
+      "title": "Ethambutol",
+      "type": "categorical"
+    },
+    "Ethionamide": {
+      "title": "Ethionamide",
+      "type": "categorical"
+    },
+    "Fluoroquinolones": {
+      "title": "Fluoroquinolones",
+      "type": "categorical"
+    },
+    "Isoniazid": {
+      "title": "Isoniazid",
+      "type": "categorical"
+    },
+    "Pyrazinamide": {
+      "title": "Pyrazinamide",
+      "type": "categorical"
+    },
+    "Rifampicin": {
+      "title": "Rifampicin",
+      "type": "categorical"
+    },
+    "Streptomycin": {
+      "title": "Streptomycin",
+      "type": "categorical"
+    },
     "background": {
       "title": "background",
       "type": "categorical"
@@ -74,6 +118,15 @@
   "filters": [
     "country",
     "countrySamp",
+    "Drug_Resistance",
+    "Capreomycin",
+    "Ethionamide",
+    "Isoniazid",
+    "Rifampicin",
+    "Fluoroquinolones",
+    "Streptomycin",
+    "Pyrazinamide",
+    "Ethambutol",
     "undated",
     "route",
     "outbreak",
@@ -1405,6 +1458,9 @@
             },
             "strain": "G26474",
             "traits": {
+              "Drug_Resistance": {
+                "value": "0"
+              },
               "background": {
                 "value": "background"
               },
@@ -1705,6 +1761,9 @@
                 },
                 "strain": "G13821",
                 "traits": {
+                  "Drug_Resistance": {
+                    "value": "0"
+                  },
                   "background": {
                     "value": "background"
                   },
@@ -1889,6 +1948,15 @@
                     },
                     "strain": "G07431",
                     "traits": {
+                      "Drug_Resistance": {
+                        "value": "2"
+                      },
+                      "Isoniazid": {
+                        "value": "katG: S315T"
+                      },
+                      "Rifampicin": {
+                        "value": "rpoB: S450L"
+                      },
                       "background": {
                         "value": "background"
                       },
@@ -2072,6 +2140,18 @@
                         },
                         "strain": "G07410",
                         "traits": {
+                          "Drug_Resistance": {
+                            "value": "3"
+                          },
+                          "Isoniazid": {
+                            "value": "katG: S315T"
+                          },
+                          "Rifampicin": {
+                            "value": "rpoB: H445D"
+                          },
+                          "Streptomycin": {
+                            "value": "rpsL: K43R"
+                          },
                           "background": {
                             "value": "background"
                           },
@@ -2162,6 +2242,9 @@
                             },
                             "strain": "G07428",
                             "traits": {
+                              "Drug_Resistance": {
+                                "value": "0"
+                              },
                               "background": {
                                 "value": "background"
                               },
@@ -2264,6 +2347,15 @@
                                 },
                                 "strain": "G05038",
                                 "traits": {
+                                  "Drug_Resistance": {
+                                    "value": "2"
+                                  },
+                                  "Isoniazid": {
+                                    "value": "katG: P100T"
+                                  },
+                                  "Rifampicin": {
+                                    "value": "rpoB: S450L"
+                                  },
                                   "background": {
                                     "value": "background"
                                   },
@@ -2325,6 +2417,9 @@
                                         },
                                         "strain": "G02719",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "0"
+                                          },
                                           "background": {
                                             "value": "background"
                                           },
@@ -2380,6 +2475,9 @@
                                         },
                                         "strain": "G02505",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "0"
+                                          },
                                           "background": {
                                             "value": "background"
                                           },
@@ -2408,6 +2506,9 @@
                                     },
                                     "strain": "NODE_0000008",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "country": {
                                         "value": "cameroon"
                                       },
@@ -2443,6 +2544,9 @@
                                         },
                                         "strain": "G02166",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "0"
+                                          },
                                           "background": {
                                             "value": "background"
                                           },
@@ -2532,6 +2636,15 @@
                                         },
                                         "strain": "G02138",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "2"
+                                          },
+                                          "Isoniazid": {
+                                            "value": "katG: S315T"
+                                          },
+                                          "Rifampicin": {
+                                            "value": "rpoB: D435Y,rpoB: H445D"
+                                          },
                                           "background": {
                                             "value": "background"
                                           },
@@ -2566,6 +2679,9 @@
                                     },
                                     "strain": "NODE_0000009",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "country": {
                                         "value": "cameroon"
                                       },
@@ -2605,6 +2721,9 @@
                                 },
                                 "strain": "NODE_0000007",
                                 "traits": {
+                                  "Drug_Resistance": {
+                                    "value": "0"
+                                  },
                                   "country": {
                                     "value": "cameroon"
                                   },
@@ -2626,6 +2745,9 @@
                             },
                             "strain": "NODE_0000006",
                             "traits": {
+                              "Drug_Resistance": {
+                                "value": "0"
+                              },
                               "country": {
                                 "value": "cote_d_ivoire"
                               },
@@ -2740,6 +2862,9 @@
                         },
                         "strain": "NODE_0000005",
                         "traits": {
+                          "Drug_Resistance": {
+                            "value": "0"
+                          },
                           "country": {
                             "value": "nigeria"
                           },
@@ -2761,6 +2886,9 @@
                     },
                     "strain": "NODE_0000004",
                     "traits": {
+                      "Drug_Resistance": {
+                        "value": "0"
+                      },
                       "country": {
                         "value": "nigeria"
                       },
@@ -2851,6 +2979,12 @@
                                 },
                                 "strain": "G07493",
                                 "traits": {
+                                  "Drug_Resistance": {
+                                    "value": "1"
+                                  },
+                                  "Rifampicin": {
+                                    "value": "rpoB: H445D"
+                                  },
                                   "background": {
                                     "value": "background"
                                   },
@@ -2931,6 +3065,9 @@
                                     },
                                     "strain": "G07457",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "background": {
                                         "value": "background"
                                       },
@@ -3013,6 +3150,9 @@
                                     },
                                     "strain": "G00524",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "background": {
                                         "value": "background"
                                       },
@@ -3045,6 +3185,9 @@
                                 },
                                 "strain": "NODE_0000013",
                                 "traits": {
+                                  "Drug_Resistance": {
+                                    "value": "0"
+                                  },
                                   "country": {
                                     "value": "nigeria"
                                   },
@@ -3105,6 +3248,9 @@
                             },
                             "strain": "NODE_0000012",
                             "traits": {
+                              "Drug_Resistance": {
+                                "value": "0"
+                              },
                               "country": {
                                 "value": "nigeria"
                               },
@@ -3247,6 +3393,12 @@
                                 },
                                 "strain": "G07459",
                                 "traits": {
+                                  "Drug_Resistance": {
+                                    "value": "1"
+                                  },
+                                  "Rifampicin": {
+                                    "value": "rpoB: S450L"
+                                  },
                                   "background": {
                                     "value": "background"
                                   },
@@ -3319,6 +3471,9 @@
                                     },
                                     "strain": "G07434",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "background": {
                                         "value": "background"
                                       },
@@ -3386,6 +3541,9 @@
                                         },
                                         "strain": "G05172",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "0"
+                                          },
                                           "background": {
                                             "value": "background"
                                           },
@@ -3462,6 +3620,9 @@
                                             },
                                             "strain": "G05182",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "0"
+                                              },
                                               "background": {
                                                 "value": "background"
                                               },
@@ -3513,6 +3674,9 @@
                                             },
                                             "strain": "G05178",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "0"
+                                              },
                                               "background": {
                                                 "value": "background"
                                               },
@@ -3549,6 +3713,9 @@
                                         },
                                         "strain": "NODE_0000017",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "0"
+                                          },
                                           "country": {
                                             "value": "cote_d_ivoire"
                                           },
@@ -3587,6 +3754,9 @@
                                             },
                                             "strain": "G05179",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "0"
+                                              },
                                               "background": {
                                                 "value": "background"
                                               },
@@ -3640,6 +3810,9 @@
                                             },
                                             "strain": "G05150",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "0"
+                                              },
                                               "background": {
                                                 "value": "background"
                                               },
@@ -3678,6 +3851,9 @@
                                         },
                                         "strain": "NODE_0000019",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "0"
+                                          },
                                           "country": {
                                             "value": "cote_d_ivoire"
                                           },
@@ -3702,6 +3878,9 @@
                                     },
                                     "strain": "NODE_0000016",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "country": {
                                         "value": "cote_d_ivoire"
                                       },
@@ -3746,6 +3925,9 @@
                                 },
                                 "strain": "NODE_0000015",
                                 "traits": {
+                                  "Drug_Resistance": {
+                                    "value": "0"
+                                  },
                                   "country": {
                                     "value": "nigeria"
                                   },
@@ -3767,6 +3949,9 @@
                             },
                             "strain": "NODE_0000014",
                             "traits": {
+                              "Drug_Resistance": {
+                                "value": "0"
+                              },
                               "country": {
                                 "value": "nigeria"
                               },
@@ -3810,6 +3995,9 @@
                         },
                         "strain": "NODE_0000011",
                         "traits": {
+                          "Drug_Resistance": {
+                            "value": "0"
+                          },
                           "country": {
                             "value": "nigeria"
                           },
@@ -3879,6 +4067,9 @@
                             },
                             "strain": "G07416",
                             "traits": {
+                              "Drug_Resistance": {
+                                "value": "0"
+                              },
                               "background": {
                                 "value": "background"
                               },
@@ -3968,6 +4159,9 @@
                                 },
                                 "strain": "G07417",
                                 "traits": {
+                                  "Drug_Resistance": {
+                                    "value": "0"
+                                  },
                                   "background": {
                                     "value": "background"
                                   },
@@ -4064,6 +4258,9 @@
                                     },
                                     "strain": "G07440",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "background": {
                                         "value": "background"
                                       },
@@ -4167,6 +4364,9 @@
                                     },
                                     "strain": "G07439",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "background": {
                                         "value": "background"
                                       },
@@ -4201,6 +4401,9 @@
                                 },
                                 "strain": "NODE_0000023",
                                 "traits": {
+                                  "Drug_Resistance": {
+                                    "value": "0"
+                                  },
                                   "country": {
                                     "value": "nigeria"
                                   },
@@ -4257,6 +4460,9 @@
                                     },
                                     "strain": "G07426",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "background": {
                                         "value": "background"
                                       },
@@ -4313,6 +4519,9 @@
                                         },
                                         "strain": "G05173",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "0"
+                                          },
                                           "background": {
                                             "value": "background"
                                           },
@@ -4417,6 +4626,15 @@
                                         },
                                         "strain": "G04038",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "2"
+                                          },
+                                          "Isoniazid": {
+                                            "value": "katG: P232R"
+                                          },
+                                          "Rifampicin": {
+                                            "value": "rpoB: S450L"
+                                          },
                                           "background": {
                                             "value": "background"
                                           },
@@ -4457,6 +4675,9 @@
                                     },
                                     "strain": "NODE_0000025",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "country": {
                                         "value": "cote_d_ivoire"
                                       },
@@ -4500,6 +4721,9 @@
                                 },
                                 "strain": "NODE_0000024",
                                 "traits": {
+                                  "Drug_Resistance": {
+                                    "value": "0"
+                                  },
                                   "country": {
                                     "value": "nigeria"
                                   },
@@ -4522,6 +4746,9 @@
                             },
                             "strain": "NODE_0000021",
                             "traits": {
+                              "Drug_Resistance": {
+                                "value": "0"
+                              },
                               "country": {
                                 "value": "nigeria"
                               },
@@ -4598,6 +4825,9 @@
                                 },
                                 "strain": "G07422",
                                 "traits": {
+                                  "Drug_Resistance": {
+                                    "value": "0"
+                                  },
                                   "background": {
                                     "value": "background"
                                   },
@@ -4667,6 +4897,9 @@
                                         },
                                         "strain": "G07435",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "0"
+                                          },
                                           "background": {
                                             "value": "background"
                                           },
@@ -4790,6 +5023,18 @@
                                         },
                                         "strain": "G07409",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "3"
+                                          },
+                                          "Fluoroquinolones": {
+                                            "value": "gyrA: A90V"
+                                          },
+                                          "Rifampicin": {
+                                            "value": "rpoB: S450L"
+                                          },
+                                          "Streptomycin": {
+                                            "value": "rrs: A907T"
+                                          },
                                           "background": {
                                             "value": "background"
                                           },
@@ -4831,6 +5076,9 @@
                                     },
                                     "strain": "NODE_0000029",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "country": {
                                         "value": "nigeria"
                                       },
@@ -4943,6 +5191,15 @@
                                         },
                                         "strain": "G07424",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "2"
+                                          },
+                                          "Ethionamide": {
+                                            "value": "fabG1: C-15T"
+                                          },
+                                          "Isoniazid": {
+                                            "value": "fabG1: C-15T"
+                                          },
                                           "background": {
                                             "value": "background"
                                           },
@@ -5042,6 +5299,18 @@
                                             },
                                             "strain": "G07430",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "3"
+                                              },
+                                              "Isoniazid": {
+                                                "value": "katG: S315T"
+                                              },
+                                              "Rifampicin": {
+                                                "value": "rpoB: S450L"
+                                              },
+                                              "Streptomycin": {
+                                                "value": "rpsL: K43R"
+                                              },
                                               "background": {
                                                 "value": "background"
                                               },
@@ -5099,6 +5368,9 @@
                                             },
                                             "strain": "G02492",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "0"
+                                              },
                                               "background": {
                                                 "value": "background"
                                               },
@@ -5133,6 +5405,9 @@
                                         },
                                         "strain": "NODE_0000042",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "0"
+                                          },
                                           "country": {
                                             "value": "nigeria"
                                           },
@@ -5224,6 +5499,21 @@
                                             },
                                             "strain": "G07436",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "4"
+                                              },
+                                              "Isoniazid": {
+                                                "value": "katG: S315T"
+                                              },
+                                              "Pyrazinamide": {
+                                                "value": "pncA: V180F"
+                                              },
+                                              "Rifampicin": {
+                                                "value": "rpoB: S450L"
+                                              },
+                                              "Streptomycin": {
+                                                "value": "rrs: C517T"
+                                              },
                                               "background": {
                                                 "value": "background"
                                               },
@@ -5315,6 +5605,21 @@
                                                 },
                                                 "strain": "G07492",
                                                 "traits": {
+                                                  "Drug_Resistance": {
+                                                    "value": "4"
+                                                  },
+                                                  "Ethambutol": {
+                                                    "value": "embA: C-16G"
+                                                  },
+                                                  "Isoniazid": {
+                                                    "value": "katG: S315T"
+                                                  },
+                                                  "Rifampicin": {
+                                                    "value": "rpoB: S450L"
+                                                  },
+                                                  "Streptomycin": {
+                                                    "value": "rrs: C517T"
+                                                  },
                                                   "background": {
                                                     "value": "background"
                                                   },
@@ -5391,6 +5696,15 @@
                                                 },
                                                 "strain": "G07491",
                                                 "traits": {
+                                                  "Drug_Resistance": {
+                                                    "value": "2"
+                                                  },
+                                                  "Isoniazid": {
+                                                    "value": "katG: S315T"
+                                                  },
+                                                  "Rifampicin": {
+                                                    "value": "rpoB: H445D"
+                                                  },
                                                   "background": {
                                                     "value": "background"
                                                   },
@@ -5425,6 +5739,12 @@
                                             },
                                             "strain": "NODE_0000040",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "1"
+                                              },
+                                              "Isoniazid": {
+                                                "value": "katG: S315T"
+                                              },
                                               "country": {
                                                 "value": "nigeria"
                                               },
@@ -5472,6 +5792,12 @@
                                         },
                                         "strain": "NODE_0000039",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "1"
+                                          },
+                                          "Isoniazid": {
+                                            "value": "katG: S315T"
+                                          },
                                           "country": {
                                             "value": "nigeria"
                                           },
@@ -5570,6 +5896,9 @@
                                             },
                                             "strain": "G07438",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "0"
+                                              },
                                               "background": {
                                                 "value": "background"
                                               },
@@ -5637,6 +5966,9 @@
                                                 },
                                                 "strain": "G07432",
                                                 "traits": {
+                                                  "Drug_Resistance": {
+                                                    "value": "0"
+                                                  },
                                                   "background": {
                                                     "value": "background"
                                                   },
@@ -5689,6 +6021,9 @@
                                                 },
                                                 "strain": "G02071",
                                                 "traits": {
+                                                  "Drug_Resistance": {
+                                                    "value": "0"
+                                                  },
                                                   "background": {
                                                     "value": "background"
                                                   },
@@ -5721,6 +6056,9 @@
                                             },
                                             "strain": "NODE_0000044",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "0"
+                                              },
                                               "country": {
                                                 "value": "nigeria"
                                               },
@@ -5749,6 +6087,9 @@
                                         },
                                         "strain": "NODE_0000043",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "0"
+                                          },
                                           "country": {
                                             "value": "nigeria"
                                           },
@@ -5829,6 +6170,9 @@
                                             },
                                             "strain": "G07437",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "0"
+                                              },
                                               "background": {
                                                 "value": "background"
                                               },
@@ -5929,6 +6273,12 @@
                                             },
                                             "strain": "G07425",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "1"
+                                              },
+                                              "Streptomycin": {
+                                                "value": "rpsL: K43R"
+                                              },
                                               "background": {
                                                 "value": "background"
                                               },
@@ -5997,6 +6347,9 @@
                                                 },
                                                 "strain": "G07442",
                                                 "traits": {
+                                                  "Drug_Resistance": {
+                                                    "value": "0"
+                                                  },
                                                   "background": {
                                                     "value": "background"
                                                   },
@@ -6054,6 +6407,9 @@
                                                 },
                                                 "strain": "G02024",
                                                 "traits": {
+                                                  "Drug_Resistance": {
+                                                    "value": "0"
+                                                  },
                                                   "background": {
                                                     "value": "background"
                                                   },
@@ -6092,6 +6448,9 @@
                                             },
                                             "strain": "NODE_0000034",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "0"
+                                              },
                                               "country": {
                                                 "value": "nigeria"
                                               },
@@ -6136,6 +6495,9 @@
                                                 },
                                                 "strain": "G05165",
                                                 "traits": {
+                                                  "Drug_Resistance": {
+                                                    "value": "0"
+                                                  },
                                                   "background": {
                                                     "value": "background"
                                                   },
@@ -6195,6 +6557,9 @@
                                                 },
                                                 "strain": "G05174",
                                                 "traits": {
+                                                  "Drug_Resistance": {
+                                                    "value": "0"
+                                                  },
                                                   "background": {
                                                     "value": "background"
                                                   },
@@ -6251,6 +6616,9 @@
                                                 },
                                                 "strain": "G05168",
                                                 "traits": {
+                                                  "Drug_Resistance": {
+                                                    "value": "0"
+                                                  },
                                                   "background": {
                                                     "value": "background"
                                                   },
@@ -6298,6 +6666,9 @@
                                             },
                                             "strain": "NODE_0000035",
                                             "traits": {
+                                              "Drug_Resistance": {
+                                                "value": "0"
+                                              },
                                               "country": {
                                                 "value": "cote_d_ivoire"
                                               },
@@ -6318,6 +6689,9 @@
                                         },
                                         "strain": "NODE_0000031",
                                         "traits": {
+                                          "Drug_Resistance": {
+                                            "value": "0"
+                                          },
                                           "country": {
                                             "value": "nigeria"
                                           },
@@ -6345,6 +6719,9 @@
                                     },
                                     "strain": "NODE_0000030",
                                     "traits": {
+                                      "Drug_Resistance": {
+                                        "value": "0"
+                                      },
                                       "country": {
                                         "value": "nigeria"
                                       },
@@ -6365,6 +6742,9 @@
                                 },
                                 "strain": "NODE_0000028",
                                 "traits": {
+                                  "Drug_Resistance": {
+                                    "value": "0"
+                                  },
                                   "country": {
                                     "value": "nigeria"
                                   },
@@ -6422,6 +6802,9 @@
                             },
                             "strain": "NODE_0000027",
                             "traits": {
+                              "Drug_Resistance": {
+                                "value": "0"
+                              },
                               "country": {
                                 "value": "nigeria"
                               },
@@ -6456,6 +6839,9 @@
                         },
                         "strain": "NODE_0000020",
                         "traits": {
+                          "Drug_Resistance": {
+                            "value": "0"
+                          },
                           "country": {
                             "value": "nigeria"
                           },
@@ -6491,6 +6877,9 @@
                     },
                     "strain": "NODE_0000010",
                     "traits": {
+                      "Drug_Resistance": {
+                        "value": "0"
+                      },
                       "country": {
                         "value": "nigeria"
                       },
@@ -6671,6 +7060,9 @@
                 },
                 "strain": "NODE_0000002",
                 "traits": {
+                  "Drug_Resistance": {
+                    "value": "0"
+                  },
                   "country": {
                     "value": "nigeria"
                   },
@@ -6695,6 +7087,9 @@
             },
             "strain": "NODE_0000001",
             "traits": {
+              "Drug_Resistance": {
+                "value": "0"
+              },
               "country": {
                 "value": ""
               },
@@ -6711,6 +7106,9 @@
         },
         "strain": "NODE_0000000",
         "traits": {
+          "Drug_Resistance": {
+            "value": "0"
+          },
           "country": {
             "value": ""
           },
@@ -6897,6 +7295,12 @@
                 },
                 "strain": "G13393",
                 "traits": {
+                  "Capreomycin": {
+                    "value": "tlyA: N236K"
+                  },
+                  "Drug_Resistance": {
+                    "value": "1"
+                  },
                   "background": {
                     "value": "background"
                   },
@@ -7109,6 +7513,18 @@
                 },
                 "strain": "G00546",
                 "traits": {
+                  "Capreomycin": {
+                    "value": "tlyA: N236K"
+                  },
+                  "Drug_Resistance": {
+                    "value": "3"
+                  },
+                  "Ethionamide": {
+                    "value": "fabG1: C-15T"
+                  },
+                  "Isoniazid": {
+                    "value": "fabG1: C-15T"
+                  },
                   "background": {
                     "value": "background"
                   },
@@ -7147,6 +7563,12 @@
             },
             "strain": "NODE_0000046",
             "traits": {
+              "Capreomycin": {
+                "value": "tlyA: N236K"
+              },
+              "Drug_Resistance": {
+                "value": "1"
+              },
               "country": {
                 "value": ""
               },
@@ -7356,6 +7778,12 @@
                 },
                 "strain": "G22819",
                 "traits": {
+                  "Capreomycin": {
+                    "value": "tlyA: N236K"
+                  },
+                  "Drug_Resistance": {
+                    "value": "1"
+                  },
                   "background": {
                     "value": "background"
                   },
@@ -7446,6 +7874,12 @@
                         },
                         "strain": "G15179",
                         "traits": {
+                          "Capreomycin": {
+                            "value": "tlyA: N236K"
+                          },
+                          "Drug_Resistance": {
+                            "value": "1"
+                          },
                           "background": {
                             "value": "background"
                           },
@@ -7522,6 +7956,12 @@
                         },
                         "strain": "G15066",
                         "traits": {
+                          "Capreomycin": {
+                            "value": "tlyA: N236K"
+                          },
+                          "Drug_Resistance": {
+                            "value": "1"
+                          },
                           "background": {
                             "value": "background"
                           },
@@ -7689,6 +8129,12 @@
                     },
                     "strain": "NODE_0000049",
                     "traits": {
+                      "Capreomycin": {
+                        "value": "tlyA: N236K"
+                      },
+                      "Drug_Resistance": {
+                        "value": "1"
+                      },
                       "country": {
                         "value": ""
                       },
@@ -7937,6 +8383,12 @@
                             },
                             "strain": "G25592",
                             "traits": {
+                              "Capreomycin": {
+                                "value": "tlyA: N236K"
+                              },
+                              "Drug_Resistance": {
+                                "value": "1"
+                              },
                               "background": {
                                 "value": "Walker2018"
                               },
@@ -8234,6 +8686,12 @@
                             },
                             "strain": "G25591",
                             "traits": {
+                              "Capreomycin": {
+                                "value": "tlyA: N236K"
+                              },
+                              "Drug_Resistance": {
+                                "value": "1"
+                              },
                               "background": {
                                 "value": "Walker2018"
                               },
@@ -8309,6 +8767,12 @@
                         },
                         "strain": "NODE_0000051",
                         "traits": {
+                          "Capreomycin": {
+                            "value": "tlyA: N236K"
+                          },
+                          "Drug_Resistance": {
+                            "value": "1"
+                          },
                           "country": {
                             "value": "ethiopia"
                           },
@@ -8407,6 +8871,12 @@
                             },
                             "strain": "G25583",
                             "traits": {
+                              "Capreomycin": {
+                                "value": "tlyA: N236K"
+                              },
+                              "Drug_Resistance": {
+                                "value": "1"
+                              },
                               "background": {
                                 "value": "Walker2018"
                               },
@@ -8513,6 +8983,12 @@
                             },
                             "strain": "G25580",
                             "traits": {
+                              "Capreomycin": {
+                                "value": "tlyA: N236K"
+                              },
+                              "Drug_Resistance": {
+                                "value": "1"
+                              },
                               "background": {
                                 "value": "Walker2018"
                               },
@@ -8617,6 +9093,12 @@
                                 },
                                 "strain": "G25579",
                                 "traits": {
+                                  "Capreomycin": {
+                                    "value": "tlyA: N236K"
+                                  },
+                                  "Drug_Resistance": {
+                                    "value": "1"
+                                  },
                                   "background": {
                                     "value": "Walker2018"
                                   },
@@ -8716,6 +9198,18 @@
                                     },
                                     "strain": "G25589",
                                     "traits": {
+                                      "Capreomycin": {
+                                        "value": "tlyA: N236K"
+                                      },
+                                      "Drug_Resistance": {
+                                        "value": "3"
+                                      },
+                                      "Isoniazid": {
+                                        "value": "katG: S315T"
+                                      },
+                                      "Rifampicin": {
+                                        "value": "rpoB: S450L"
+                                      },
                                       "background": {
                                         "value": "Walker2018"
                                       },
@@ -8812,6 +9306,15 @@
                                     },
                                     "strain": "G25578",
                                     "traits": {
+                                      "Capreomycin": {
+                                        "value": "tlyA: N236K"
+                                      },
+                                      "Drug_Resistance": {
+                                        "value": "2"
+                                      },
+                                      "Ethambutol": {
+                                        "value": "embB: D1024N"
+                                      },
                                       "background": {
                                         "value": "Walker2018"
                                       },
@@ -8852,6 +9355,12 @@
                                 },
                                 "strain": "NODE_0000056",
                                 "traits": {
+                                  "Capreomycin": {
+                                    "value": "tlyA: N236K"
+                                  },
+                                  "Drug_Resistance": {
+                                    "value": "1"
+                                  },
                                   "country": {
                                     "value": "somalia"
                                   },
@@ -8875,6 +9384,12 @@
                             },
                             "strain": "NODE_0000055",
                             "traits": {
+                              "Capreomycin": {
+                                "value": "tlyA: N236K"
+                              },
+                              "Drug_Resistance": {
+                                "value": "1"
+                              },
                               "country": {
                                 "value": "somalia"
                               },
@@ -8939,6 +9454,12 @@
                         },
                         "strain": "NODE_0000053",
                         "traits": {
+                          "Capreomycin": {
+                            "value": "tlyA: N236K"
+                          },
+                          "Drug_Resistance": {
+                            "value": "1"
+                          },
                           "country": {
                             "value": "somalia"
                           },
@@ -9013,6 +9534,15 @@
                                 },
                                 "strain": "G25586",
                                 "traits": {
+                                  "Capreomycin": {
+                                    "value": "tlyA: N236K"
+                                  },
+                                  "Drug_Resistance": {
+                                    "value": "2"
+                                  },
+                                  "Isoniazid": {
+                                    "value": "katG: S315T"
+                                  },
                                   "background": {
                                     "value": "Walker2018"
                                   },
@@ -9115,6 +9645,15 @@
                                 },
                                 "strain": "G25585",
                                 "traits": {
+                                  "Capreomycin": {
+                                    "value": "tlyA: N236K"
+                                  },
+                                  "Drug_Resistance": {
+                                    "value": "2"
+                                  },
+                                  "Isoniazid": {
+                                    "value": "katG: S315T"
+                                  },
                                   "background": {
                                     "value": "Walker2018"
                                   },
@@ -9236,6 +9775,15 @@
                             },
                             "strain": "NODE_0000058",
                             "traits": {
+                              "Capreomycin": {
+                                "value": "tlyA: N236K"
+                              },
+                              "Drug_Resistance": {
+                                "value": "2"
+                              },
+                              "Isoniazid": {
+                                "value": "katG: S315T"
+                              },
                               "country": {
                                 "value": "ethiopia"
                               },
@@ -9318,6 +9866,12 @@
                                     },
                                     "strain": "G25588",
                                     "traits": {
+                                      "Capreomycin": {
+                                        "value": "tlyA: N236K"
+                                      },
+                                      "Drug_Resistance": {
+                                        "value": "1"
+                                      },
                                       "background": {
                                         "value": "Walker2018"
                                       },
@@ -9408,6 +9962,12 @@
                                     },
                                     "strain": "G25587",
                                     "traits": {
+                                      "Capreomycin": {
+                                        "value": "tlyA: N236K"
+                                      },
+                                      "Drug_Resistance": {
+                                        "value": "1"
+                                      },
                                       "background": {
                                         "value": "Walker2018"
                                       },
@@ -9495,6 +10055,12 @@
                                 },
                                 "strain": "NODE_0000060",
                                 "traits": {
+                                  "Capreomycin": {
+                                    "value": "tlyA: N236K"
+                                  },
+                                  "Drug_Resistance": {
+                                    "value": "1"
+                                  },
                                   "country": {
                                     "value": "somalia"
                                   },
@@ -9752,6 +10318,18 @@
                                         },
                                         "strain": "G25590",
                                         "traits": {
+                                          "Capreomycin": {
+                                            "value": "tlyA: N236K"
+                                          },
+                                          "Drug_Resistance": {
+                                            "value": "3"
+                                          },
+                                          "Isoniazid": {
+                                            "value": "katG: S315T"
+                                          },
+                                          "Rifampicin": {
+                                            "value": "rpoB: S450L"
+                                          },
                                           "background": {
                                             "value": "Walker2018"
                                           },
@@ -9874,6 +10452,12 @@
                                         },
                                         "strain": "G25584",
                                         "traits": {
+                                          "Capreomycin": {
+                                            "value": "tlyA: N236K"
+                                          },
+                                          "Drug_Resistance": {
+                                            "value": "1"
+                                          },
                                           "background": {
                                             "value": "Walker2018"
                                           },
@@ -9911,6 +10495,12 @@
                                     },
                                     "strain": "NODE_0000062",
                                     "traits": {
+                                      "Capreomycin": {
+                                        "value": "tlyA: N236K"
+                                      },
+                                      "Drug_Resistance": {
+                                        "value": "1"
+                                      },
                                       "country": {
                                         "value": "ethiopia"
                                       },
@@ -10024,6 +10614,21 @@
                                         },
                                         "strain": "G25576",
                                         "traits": {
+                                          "Capreomycin": {
+                                            "value": "tlyA: N236K"
+                                          },
+                                          "Drug_Resistance": {
+                                            "value": "4"
+                                          },
+                                          "Ethambutol": {
+                                            "value": "embB: M306I"
+                                          },
+                                          "Isoniazid": {
+                                            "value": "katG: S315T"
+                                          },
+                                          "Rifampicin": {
+                                            "value": "rpoB: S450L"
+                                          },
                                           "background": {
                                             "value": "Walker2018"
                                           },
@@ -10200,6 +10805,21 @@
                                         },
                                         "strain": "G25575",
                                         "traits": {
+                                          "Capreomycin": {
+                                            "value": "tlyA: N236K"
+                                          },
+                                          "Drug_Resistance": {
+                                            "value": "4"
+                                          },
+                                          "Ethambutol": {
+                                            "value": "embB: M306I"
+                                          },
+                                          "Isoniazid": {
+                                            "value": "katG: S315T"
+                                          },
+                                          "Rifampicin": {
+                                            "value": "rpoB: S450L"
+                                          },
                                           "background": {
                                             "value": "Walker2018"
                                           },
@@ -10344,6 +10964,21 @@
                                             },
                                             "strain": "G25572",
                                             "traits": {
+                                              "Capreomycin": {
+                                                "value": "tlyA: N236K"
+                                              },
+                                              "Drug_Resistance": {
+                                                "value": "4"
+                                              },
+                                              "Ethambutol": {
+                                                "value": "embB: M306I"
+                                              },
+                                              "Isoniazid": {
+                                                "value": "katG: S315T"
+                                              },
+                                              "Rifampicin": {
+                                                "value": "rpoB: S450L"
+                                              },
                                               "background": {
                                                 "value": "Walker2018"
                                               },
@@ -10437,6 +11072,21 @@
                                             },
                                             "strain": "G25555",
                                             "traits": {
+                                              "Capreomycin": {
+                                                "value": "tlyA: N236K"
+                                              },
+                                              "Drug_Resistance": {
+                                                "value": "4"
+                                              },
+                                              "Ethambutol": {
+                                                "value": "embB: M306I"
+                                              },
+                                              "Isoniazid": {
+                                                "value": "katG: S315T"
+                                              },
+                                              "Rifampicin": {
+                                                "value": "rpoB: S450L"
+                                              },
                                               "background": {
                                                 "value": "Walker2018"
                                               },
@@ -10471,6 +11121,21 @@
                                         },
                                         "strain": "NODE_0000064",
                                         "traits": {
+                                          "Capreomycin": {
+                                            "value": "tlyA: N236K"
+                                          },
+                                          "Drug_Resistance": {
+                                            "value": "4"
+                                          },
+                                          "Ethambutol": {
+                                            "value": "embB: M306I"
+                                          },
+                                          "Isoniazid": {
+                                            "value": "katG: S315T"
+                                          },
+                                          "Rifampicin": {
+                                            "value": "rpoB: S450L"
+                                          },
                                           "country": {
                                             "value": "djibouti"
                                           },
@@ -10565,6 +11230,21 @@
                                             },
                                             "strain": "G25602",
                                             "traits": {
+                                              "Capreomycin": {
+                                                "value": "tlyA: N236K"
+                                              },
+                                              "Drug_Resistance": {
+                                                "value": "4"
+                                              },
+                                              "Ethambutol": {
+                                                "value": "embB: M306I"
+                                              },
+                                              "Isoniazid": {
+                                                "value": "katG: S315T"
+                                              },
+                                              "Rifampicin": {
+                                                "value": "rpoB: S450L"
+                                              },
                                               "background": {
                                                 "value": "Walker2018"
                                               },
@@ -10679,6 +11359,21 @@
                                             },
                                             "strain": "G25556",
                                             "traits": {
+                                              "Capreomycin": {
+                                                "value": "tlyA: N236K"
+                                              },
+                                              "Drug_Resistance": {
+                                                "value": "4"
+                                              },
+                                              "Ethambutol": {
+                                                "value": "embB: M306I"
+                                              },
+                                              "Isoniazid": {
+                                                "value": "katG: S315T"
+                                              },
+                                              "Rifampicin": {
+                                                "value": "rpoB: S450L"
+                                              },
                                               "background": {
                                                 "value": "Walker2018"
                                               },
@@ -10725,6 +11420,21 @@
                                         },
                                         "strain": "NODE_0000068",
                                         "traits": {
+                                          "Capreomycin": {
+                                            "value": "tlyA: N236K"
+                                          },
+                                          "Drug_Resistance": {
+                                            "value": "4"
+                                          },
+                                          "Ethambutol": {
+                                            "value": "embB: M306I"
+                                          },
+                                          "Isoniazid": {
+                                            "value": "katG: S315T"
+                                          },
+                                          "Rifampicin": {
+                                            "value": "rpoB: S450L"
+                                          },
                                           "country": {
                                             "value": "djibouti"
                                           },
@@ -10831,6 +11541,21 @@
                                             },
                                             "strain": "G25574",
                                             "traits": {
+                                              "Capreomycin": {
+                                                "value": "tlyA: N236K"
+                                              },
+                                              "Drug_Resistance": {
+                                                "value": "4"
+                                              },
+                                              "Ethambutol": {
+                                                "value": "embB: M306I"
+                                              },
+                                              "Isoniazid": {
+                                                "value": "katG: S315T"
+                                              },
+                                              "Rifampicin": {
+                                                "value": "rpoB: S450L"
+                                              },
                                               "background": {
                                                 "value": "Walker2018"
                                               },
@@ -10962,6 +11687,21 @@
                                             },
                                             "strain": "G25573",
                                             "traits": {
+                                              "Capreomycin": {
+                                                "value": "tlyA: N236K"
+                                              },
+                                              "Drug_Resistance": {
+                                                "value": "4"
+                                              },
+                                              "Ethambutol": {
+                                                "value": "embB: M306I"
+                                              },
+                                              "Isoniazid": {
+                                                "value": "katG: S315T"
+                                              },
+                                              "Rifampicin": {
+                                                "value": "rpoB: S450L"
+                                              },
                                               "background": {
                                                 "value": "Walker2018"
                                               },
@@ -11006,6 +11746,21 @@
                                         },
                                         "strain": "NODE_0000070",
                                         "traits": {
+                                          "Capreomycin": {
+                                            "value": "tlyA: N236K"
+                                          },
+                                          "Drug_Resistance": {
+                                            "value": "4"
+                                          },
+                                          "Ethambutol": {
+                                            "value": "embB: M306I"
+                                          },
+                                          "Isoniazid": {
+                                            "value": "katG: S315T"
+                                          },
+                                          "Rifampicin": {
+                                            "value": "rpoB: S450L"
+                                          },
                                           "country": {
                                             "value": "djibouti"
                                           },
@@ -11152,6 +11907,24 @@
                                             },
                                             "strain": "G25571",
                                             "traits": {
+                                              "Capreomycin": {
+                                                "value": "tlyA: N236K"
+                                              },
+                                              "Drug_Resistance": {
+                                                "value": "5"
+                                              },
+                                              "Ethambutol": {
+                                                "value": "embB: M306I"
+                                              },
+                                              "Isoniazid": {
+                                                "value": "katG: S315T"
+                                              },
+                                              "Pyrazinamide": {
+                                                "value": "pncA: W68C"
+                                              },
+                                              "Rifampicin": {
+                                                "value": "rpoB: S450L"
+                                              },
                                               "background": {
                                                 "value": "Walker2018"
                                               },
@@ -11251,6 +12024,24 @@
                                                 },
                                                 "strain": "G25565",
                                                 "traits": {
+                                                  "Capreomycin": {
+                                                    "value": "tlyA: N236K"
+                                                  },
+                                                  "Drug_Resistance": {
+                                                    "value": "5"
+                                                  },
+                                                  "Ethambutol": {
+                                                    "value": "embB: M306I"
+                                                  },
+                                                  "Isoniazid": {
+                                                    "value": "katG: S315T"
+                                                  },
+                                                  "Pyrazinamide": {
+                                                    "value": "pncA: W68C"
+                                                  },
+                                                  "Rifampicin": {
+                                                    "value": "rpoB: S450L"
+                                                  },
                                                   "background": {
                                                     "value": "Walker2018"
                                                   },
@@ -11349,6 +12140,24 @@
                                                     },
                                                     "strain": "G25568",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -11441,6 +12250,24 @@
                                                     },
                                                     "strain": "G25560",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -11475,6 +12302,24 @@
                                                 },
                                                 "strain": "NODE_0000073",
                                                 "traits": {
+                                                  "Capreomycin": {
+                                                    "value": "tlyA: N236K"
+                                                  },
+                                                  "Drug_Resistance": {
+                                                    "value": "5"
+                                                  },
+                                                  "Ethambutol": {
+                                                    "value": "embB: M306I"
+                                                  },
+                                                  "Isoniazid": {
+                                                    "value": "katG: S315T"
+                                                  },
+                                                  "Pyrazinamide": {
+                                                    "value": "pncA: W68C"
+                                                  },
+                                                  "Rifampicin": {
+                                                    "value": "rpoB: S450L"
+                                                  },
                                                   "country": {
                                                     "value": "somalia"
                                                   },
@@ -11547,6 +12392,24 @@
                                                     },
                                                     "strain": "G25599",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -11613,6 +12476,24 @@
                                                     },
                                                     "strain": "G25594",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -11645,6 +12526,24 @@
                                                 },
                                                 "strain": "NODE_0000080",
                                                 "traits": {
+                                                  "Capreomycin": {
+                                                    "value": "tlyA: N236K"
+                                                  },
+                                                  "Drug_Resistance": {
+                                                    "value": "5"
+                                                  },
+                                                  "Ethambutol": {
+                                                    "value": "embB: M306I"
+                                                  },
+                                                  "Isoniazid": {
+                                                    "value": "katG: S315T"
+                                                  },
+                                                  "Pyrazinamide": {
+                                                    "value": "pncA: W68C"
+                                                  },
+                                                  "Rifampicin": {
+                                                    "value": "rpoB: S450L"
+                                                  },
                                                   "country": {
                                                     "value": "somalia"
                                                   },
@@ -11744,6 +12643,24 @@
                                                             },
                                                             "strain": "G25567",
                                                             "traits": {
+                                                              "Capreomycin": {
+                                                                "value": "tlyA: N236K"
+                                                              },
+                                                              "Drug_Resistance": {
+                                                                "value": "5"
+                                                              },
+                                                              "Ethambutol": {
+                                                                "value": "embB: M306I"
+                                                              },
+                                                              "Isoniazid": {
+                                                                "value": "katG: S315T"
+                                                              },
+                                                              "Pyrazinamide": {
+                                                                "value": "pncA: W68C"
+                                                              },
+                                                              "Rifampicin": {
+                                                                "value": "rpoB: S450L"
+                                                              },
                                                               "background": {
                                                                 "value": "Walker2018"
                                                               },
@@ -11813,6 +12730,24 @@
                                                             },
                                                             "strain": "G25597",
                                                             "traits": {
+                                                              "Capreomycin": {
+                                                                "value": "tlyA: N236K"
+                                                              },
+                                                              "Drug_Resistance": {
+                                                                "value": "5"
+                                                              },
+                                                              "Ethambutol": {
+                                                                "value": "embB: M306I"
+                                                              },
+                                                              "Isoniazid": {
+                                                                "value": "katG: S315T"
+                                                              },
+                                                              "Pyrazinamide": {
+                                                                "value": "pncA: W68C"
+                                                              },
+                                                              "Rifampicin": {
+                                                                "value": "rpoB: S450L"
+                                                              },
                                                               "background": {
                                                                 "value": "Walker2018"
                                                               },
@@ -11841,6 +12776,24 @@
                                                         },
                                                         "strain": "NODE_0000103",
                                                         "traits": {
+                                                          "Capreomycin": {
+                                                            "value": "tlyA: N236K"
+                                                          },
+                                                          "Drug_Resistance": {
+                                                            "value": "5"
+                                                          },
+                                                          "Ethambutol": {
+                                                            "value": "embB: M306I"
+                                                          },
+                                                          "Isoniazid": {
+                                                            "value": "katG: S315T"
+                                                          },
+                                                          "Pyrazinamide": {
+                                                            "value": "pncA: W68C"
+                                                          },
+                                                          "Rifampicin": {
+                                                            "value": "rpoB: S450L"
+                                                          },
                                                           "country": {
                                                             "value": "somalia"
                                                           },
@@ -11942,6 +12895,24 @@
                                                             },
                                                             "strain": "G25557",
                                                             "traits": {
+                                                              "Capreomycin": {
+                                                                "value": "tlyA: N236K"
+                                                              },
+                                                              "Drug_Resistance": {
+                                                                "value": "5"
+                                                              },
+                                                              "Ethambutol": {
+                                                                "value": "embB: M306I"
+                                                              },
+                                                              "Isoniazid": {
+                                                                "value": "katG: S315T"
+                                                              },
+                                                              "Pyrazinamide": {
+                                                                "value": "pncA: W68C"
+                                                              },
+                                                              "Rifampicin": {
+                                                                "value": "rpoB: S450L"
+                                                              },
                                                               "background": {
                                                                 "value": "Walker2018"
                                                               },
@@ -12042,6 +13013,24 @@
                                                                 },
                                                                 "strain": "G25559",
                                                                 "traits": {
+                                                                  "Capreomycin": {
+                                                                    "value": "tlyA: N236K"
+                                                                  },
+                                                                  "Drug_Resistance": {
+                                                                    "value": "5"
+                                                                  },
+                                                                  "Ethambutol": {
+                                                                    "value": "embB: M306I"
+                                                                  },
+                                                                  "Isoniazid": {
+                                                                    "value": "katG: S315T"
+                                                                  },
+                                                                  "Pyrazinamide": {
+                                                                    "value": "pncA: W68C"
+                                                                  },
+                                                                  "Rifampicin": {
+                                                                    "value": "rpoB: S450L"
+                                                                  },
                                                                   "background": {
                                                                     "value": "Walker2018"
                                                                   },
@@ -12137,6 +13126,24 @@
                                                                 },
                                                                 "strain": "G25595",
                                                                 "traits": {
+                                                                  "Capreomycin": {
+                                                                    "value": "tlyA: N236K"
+                                                                  },
+                                                                  "Drug_Resistance": {
+                                                                    "value": "5"
+                                                                  },
+                                                                  "Ethambutol": {
+                                                                    "value": "embB: M306I"
+                                                                  },
+                                                                  "Isoniazid": {
+                                                                    "value": "katG: S315T"
+                                                                  },
+                                                                  "Pyrazinamide": {
+                                                                    "value": "pncA: W68C"
+                                                                  },
+                                                                  "Rifampicin": {
+                                                                    "value": "rpoB: S450L"
+                                                                  },
                                                                   "background": {
                                                                     "value": "Walker2018"
                                                                   },
@@ -12165,6 +13172,24 @@
                                                             },
                                                             "strain": "NODE_0000105",
                                                             "traits": {
+                                                              "Capreomycin": {
+                                                                "value": "tlyA: N236K"
+                                                              },
+                                                              "Drug_Resistance": {
+                                                                "value": "5"
+                                                              },
+                                                              "Ethambutol": {
+                                                                "value": "embB: M306I"
+                                                              },
+                                                              "Isoniazid": {
+                                                                "value": "katG: S315T"
+                                                              },
+                                                              "Pyrazinamide": {
+                                                                "value": "pncA: W68C"
+                                                              },
+                                                              "Rifampicin": {
+                                                                "value": "rpoB: S450L"
+                                                              },
                                                               "country": {
                                                                 "value": "somalia"
                                                               },
@@ -12181,6 +13206,24 @@
                                                         },
                                                         "strain": "NODE_0000104",
                                                         "traits": {
+                                                          "Capreomycin": {
+                                                            "value": "tlyA: N236K"
+                                                          },
+                                                          "Drug_Resistance": {
+                                                            "value": "5"
+                                                          },
+                                                          "Ethambutol": {
+                                                            "value": "embB: M306I"
+                                                          },
+                                                          "Isoniazid": {
+                                                            "value": "katG: S315T"
+                                                          },
+                                                          "Pyrazinamide": {
+                                                            "value": "pncA: W68C"
+                                                          },
+                                                          "Rifampicin": {
+                                                            "value": "rpoB: S450L"
+                                                          },
                                                           "country": {
                                                             "value": "somalia"
                                                           },
@@ -12197,6 +13240,24 @@
                                                     },
                                                     "strain": "NODE_0000102",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "country": {
                                                         "value": "somalia"
                                                       },
@@ -12278,6 +13339,24 @@
                                                             },
                                                             "strain": "G25598",
                                                             "traits": {
+                                                              "Capreomycin": {
+                                                                "value": "tlyA: N236K"
+                                                              },
+                                                              "Drug_Resistance": {
+                                                                "value": "5"
+                                                              },
+                                                              "Ethambutol": {
+                                                                "value": "embB: M306I"
+                                                              },
+                                                              "Isoniazid": {
+                                                                "value": "katG: S315T"
+                                                              },
+                                                              "Pyrazinamide": {
+                                                                "value": "pncA: W68C"
+                                                              },
+                                                              "Rifampicin": {
+                                                                "value": "rpoB: S450L"
+                                                              },
                                                               "background": {
                                                                 "value": "Walker2018"
                                                               },
@@ -12364,6 +13443,24 @@
                                                             },
                                                             "strain": "G25593",
                                                             "traits": {
+                                                              "Capreomycin": {
+                                                                "value": "tlyA: N236K"
+                                                              },
+                                                              "Drug_Resistance": {
+                                                                "value": "5"
+                                                              },
+                                                              "Ethambutol": {
+                                                                "value": "embB: M306I"
+                                                              },
+                                                              "Isoniazid": {
+                                                                "value": "katG: S315T"
+                                                              },
+                                                              "Pyrazinamide": {
+                                                                "value": "pncA: W68C"
+                                                              },
+                                                              "Rifampicin": {
+                                                                "value": "rpoB: S450L"
+                                                              },
                                                               "background": {
                                                                 "value": "Walker2018"
                                                               },
@@ -12392,6 +13489,24 @@
                                                         },
                                                         "strain": "NODE_0000107",
                                                         "traits": {
+                                                          "Capreomycin": {
+                                                            "value": "tlyA: N236K"
+                                                          },
+                                                          "Drug_Resistance": {
+                                                            "value": "5"
+                                                          },
+                                                          "Ethambutol": {
+                                                            "value": "embB: M306I"
+                                                          },
+                                                          "Isoniazid": {
+                                                            "value": "katG: S315T"
+                                                          },
+                                                          "Pyrazinamide": {
+                                                            "value": "pncA: W68C"
+                                                          },
+                                                          "Rifampicin": {
+                                                            "value": "rpoB: S450L"
+                                                          },
                                                           "country": {
                                                             "value": "somalia"
                                                           },
@@ -12481,6 +13596,24 @@
                                                             },
                                                             "strain": "G25564",
                                                             "traits": {
+                                                              "Capreomycin": {
+                                                                "value": "tlyA: N236K"
+                                                              },
+                                                              "Drug_Resistance": {
+                                                                "value": "5"
+                                                              },
+                                                              "Ethambutol": {
+                                                                "value": "embB: M306I"
+                                                              },
+                                                              "Isoniazid": {
+                                                                "value": "katG: S315T"
+                                                              },
+                                                              "Pyrazinamide": {
+                                                                "value": "pncA: W68C"
+                                                              },
+                                                              "Rifampicin": {
+                                                                "value": "rpoB: S450L"
+                                                              },
                                                               "background": {
                                                                 "value": "Walker2018"
                                                               },
@@ -12576,6 +13709,24 @@
                                                                 },
                                                                 "strain": "G25561",
                                                                 "traits": {
+                                                                  "Capreomycin": {
+                                                                    "value": "tlyA: N236K"
+                                                                  },
+                                                                  "Drug_Resistance": {
+                                                                    "value": "5"
+                                                                  },
+                                                                  "Ethambutol": {
+                                                                    "value": "embB: M306I"
+                                                                  },
+                                                                  "Isoniazid": {
+                                                                    "value": "katG: S315T"
+                                                                  },
+                                                                  "Pyrazinamide": {
+                                                                    "value": "pncA: W68C"
+                                                                  },
+                                                                  "Rifampicin": {
+                                                                    "value": "rpoB: S450L"
+                                                                  },
                                                                   "background": {
                                                                     "value": "Walker2018"
                                                                   },
@@ -12683,6 +13834,24 @@
                                                                     },
                                                                     "strain": "G25577",
                                                                     "traits": {
+                                                                      "Capreomycin": {
+                                                                        "value": "tlyA: N236K"
+                                                                      },
+                                                                      "Drug_Resistance": {
+                                                                        "value": "5"
+                                                                      },
+                                                                      "Ethambutol": {
+                                                                        "value": "embB: M306I"
+                                                                      },
+                                                                      "Isoniazid": {
+                                                                        "value": "katG: S315T"
+                                                                      },
+                                                                      "Pyrazinamide": {
+                                                                        "value": "pncA: W68C"
+                                                                      },
+                                                                      "Rifampicin": {
+                                                                        "value": "rpoB: S450L"
+                                                                      },
                                                                       "background": {
                                                                         "value": "Walker2018"
                                                                       },
@@ -12783,6 +13952,24 @@
                                                                     },
                                                                     "strain": "G25582",
                                                                     "traits": {
+                                                                      "Capreomycin": {
+                                                                        "value": "tlyA: N236K"
+                                                                      },
+                                                                      "Drug_Resistance": {
+                                                                        "value": "5"
+                                                                      },
+                                                                      "Ethambutol": {
+                                                                        "value": "embB: M306I"
+                                                                      },
+                                                                      "Isoniazid": {
+                                                                        "value": "katG: S315T"
+                                                                      },
+                                                                      "Pyrazinamide": {
+                                                                        "value": "pncA: W68C"
+                                                                      },
+                                                                      "Rifampicin": {
+                                                                        "value": "rpoB: S450L"
+                                                                      },
                                                                       "background": {
                                                                         "value": "Walker2018"
                                                                       },
@@ -12811,6 +13998,24 @@
                                                                 },
                                                                 "strain": "NODE_0000110",
                                                                 "traits": {
+                                                                  "Capreomycin": {
+                                                                    "value": "tlyA: N236K"
+                                                                  },
+                                                                  "Drug_Resistance": {
+                                                                    "value": "5"
+                                                                  },
+                                                                  "Ethambutol": {
+                                                                    "value": "embB: M306I"
+                                                                  },
+                                                                  "Isoniazid": {
+                                                                    "value": "katG: S315T"
+                                                                  },
+                                                                  "Pyrazinamide": {
+                                                                    "value": "pncA: W68C"
+                                                                  },
+                                                                  "Rifampicin": {
+                                                                    "value": "rpoB: S450L"
+                                                                  },
                                                                   "country": {
                                                                     "value": "eritrea"
                                                                   },
@@ -12827,6 +14032,24 @@
                                                             },
                                                             "strain": "NODE_0000109",
                                                             "traits": {
+                                                              "Capreomycin": {
+                                                                "value": "tlyA: N236K"
+                                                              },
+                                                              "Drug_Resistance": {
+                                                                "value": "5"
+                                                              },
+                                                              "Ethambutol": {
+                                                                "value": "embB: M306I"
+                                                              },
+                                                              "Isoniazid": {
+                                                                "value": "katG: S315T"
+                                                              },
+                                                              "Pyrazinamide": {
+                                                                "value": "pncA: W68C"
+                                                              },
+                                                              "Rifampicin": {
+                                                                "value": "rpoB: S450L"
+                                                              },
                                                               "country": {
                                                                 "value": "somalia"
                                                               },
@@ -12843,6 +14066,24 @@
                                                         },
                                                         "strain": "NODE_0000108",
                                                         "traits": {
+                                                          "Capreomycin": {
+                                                            "value": "tlyA: N236K"
+                                                          },
+                                                          "Drug_Resistance": {
+                                                            "value": "5"
+                                                          },
+                                                          "Ethambutol": {
+                                                            "value": "embB: M306I"
+                                                          },
+                                                          "Isoniazid": {
+                                                            "value": "katG: S315T"
+                                                          },
+                                                          "Pyrazinamide": {
+                                                            "value": "pncA: W68C"
+                                                          },
+                                                          "Rifampicin": {
+                                                            "value": "rpoB: S450L"
+                                                          },
                                                           "country": {
                                                             "value": "somalia"
                                                           },
@@ -12859,6 +14100,24 @@
                                                     },
                                                     "strain": "NODE_0000106",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "country": {
                                                         "value": "somalia"
                                                       },
@@ -12875,6 +14134,24 @@
                                                 },
                                                 "strain": "NODE_0000101",
                                                 "traits": {
+                                                  "Capreomycin": {
+                                                    "value": "tlyA: N236K"
+                                                  },
+                                                  "Drug_Resistance": {
+                                                    "value": "5"
+                                                  },
+                                                  "Ethambutol": {
+                                                    "value": "embB: M306I"
+                                                  },
+                                                  "Isoniazid": {
+                                                    "value": "katG: S315T"
+                                                  },
+                                                  "Pyrazinamide": {
+                                                    "value": "pncA: W68C"
+                                                  },
+                                                  "Rifampicin": {
+                                                    "value": "rpoB: S450L"
+                                                  },
                                                   "country": {
                                                     "value": "somalia"
                                                   },
@@ -13082,6 +14359,24 @@
                                                     },
                                                     "strain": "G25566",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -13192,6 +14487,24 @@
                                                     },
                                                     "strain": "G25569",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -13292,6 +14605,24 @@
                                                     },
                                                     "strain": "G25553",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -13400,6 +14731,24 @@
                                                     },
                                                     "strain": "G25581",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -13500,6 +14849,24 @@
                                                     },
                                                     "strain": "G25562",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -13581,6 +14948,24 @@
                                                     },
                                                     "strain": "G25596",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -13686,6 +15071,24 @@
                                                     },
                                                     "strain": "G25600",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -13793,6 +15196,24 @@
                                                     },
                                                     "strain": "G25558",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -13900,6 +15321,24 @@
                                                     },
                                                     "strain": "G25570",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -14007,6 +15446,24 @@
                                                     },
                                                     "strain": "G25610",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -14102,6 +15559,24 @@
                                                     },
                                                     "strain": "G25563",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -14186,6 +15661,24 @@
                                                     },
                                                     "strain": "G25554",
                                                     "traits": {
+                                                      "Capreomycin": {
+                                                        "value": "tlyA: N236K"
+                                                      },
+                                                      "Drug_Resistance": {
+                                                        "value": "5"
+                                                      },
+                                                      "Ethambutol": {
+                                                        "value": "embB: M306I"
+                                                      },
+                                                      "Isoniazid": {
+                                                        "value": "katG: S315T"
+                                                      },
+                                                      "Pyrazinamide": {
+                                                        "value": "pncA: W68C"
+                                                      },
+                                                      "Rifampicin": {
+                                                        "value": "rpoB: S450L"
+                                                      },
                                                       "background": {
                                                         "value": "Walker2018"
                                                       },
@@ -14218,6 +15711,24 @@
                                                 },
                                                 "strain": "NODE_0000088",
                                                 "traits": {
+                                                  "Capreomycin": {
+                                                    "value": "tlyA: N236K"
+                                                  },
+                                                  "Drug_Resistance": {
+                                                    "value": "5"
+                                                  },
+                                                  "Ethambutol": {
+                                                    "value": "embB: M306I"
+                                                  },
+                                                  "Isoniazid": {
+                                                    "value": "katG: S315T"
+                                                  },
+                                                  "Pyrazinamide": {
+                                                    "value": "pncA: W68C"
+                                                  },
+                                                  "Rifampicin": {
+                                                    "value": "rpoB: S450L"
+                                                  },
                                                   "country": {
                                                     "value": "somalia"
                                                   },
@@ -14239,6 +15750,24 @@
                                             },
                                             "strain": "NODE_0000072",
                                             "traits": {
+                                              "Capreomycin": {
+                                                "value": "tlyA: N236K"
+                                              },
+                                              "Drug_Resistance": {
+                                                "value": "5"
+                                              },
+                                              "Ethambutol": {
+                                                "value": "embB: M306I"
+                                              },
+                                              "Isoniazid": {
+                                                "value": "katG: S315T"
+                                              },
+                                              "Pyrazinamide": {
+                                                "value": "pncA: W68C"
+                                              },
+                                              "Rifampicin": {
+                                                "value": "rpoB: S450L"
+                                              },
                                               "country": {
                                                 "value": "somalia"
                                               },
@@ -14263,6 +15792,24 @@
                                         },
                                         "strain": "NODE_0000071",
                                         "traits": {
+                                          "Capreomycin": {
+                                            "value": "tlyA: N236K"
+                                          },
+                                          "Drug_Resistance": {
+                                            "value": "5"
+                                          },
+                                          "Ethambutol": {
+                                            "value": "embB: M306I"
+                                          },
+                                          "Isoniazid": {
+                                            "value": "katG: S315T"
+                                          },
+                                          "Pyrazinamide": {
+                                            "value": "pncA: W68C"
+                                          },
+                                          "Rifampicin": {
+                                            "value": "rpoB: S450L"
+                                          },
                                           "country": {
                                             "value": "djibouti"
                                           },
@@ -14352,6 +15899,21 @@
                                     },
                                     "strain": "NODE_0000063",
                                     "traits": {
+                                      "Capreomycin": {
+                                        "value": "tlyA: N236K"
+                                      },
+                                      "Drug_Resistance": {
+                                        "value": "4"
+                                      },
+                                      "Ethambutol": {
+                                        "value": "embB: M306I"
+                                      },
+                                      "Isoniazid": {
+                                        "value": "katG: S315T"
+                                      },
+                                      "Rifampicin": {
+                                        "value": "rpoB: S450L"
+                                      },
                                       "country": {
                                         "value": "djibouti"
                                       },
@@ -14380,6 +15942,12 @@
                                 },
                                 "strain": "NODE_0000061",
                                 "traits": {
+                                  "Capreomycin": {
+                                    "value": "tlyA: N236K"
+                                  },
+                                  "Drug_Resistance": {
+                                    "value": "1"
+                                  },
                                   "country": {
                                     "value": "ethiopia"
                                   },
@@ -14407,6 +15975,12 @@
                             },
                             "strain": "NODE_0000059",
                             "traits": {
+                              "Capreomycin": {
+                                "value": "tlyA: N236K"
+                              },
+                              "Drug_Resistance": {
+                                "value": "1"
+                              },
                               "country": {
                                 "value": "ethiopia"
                               },
@@ -14428,6 +16002,12 @@
                         },
                         "strain": "NODE_0000057",
                         "traits": {
+                          "Capreomycin": {
+                            "value": "tlyA: N236K"
+                          },
+                          "Drug_Resistance": {
+                            "value": "1"
+                          },
                           "country": {
                             "value": "ethiopia"
                           },
@@ -14545,6 +16125,12 @@
                     },
                     "strain": "NODE_0000050",
                     "traits": {
+                      "Capreomycin": {
+                        "value": "tlyA: N236K"
+                      },
+                      "Drug_Resistance": {
+                        "value": "1"
+                      },
                       "country": {
                         "value": "ethiopia"
                       },
@@ -14578,6 +16164,12 @@
                 },
                 "strain": "NODE_0000048",
                 "traits": {
+                  "Capreomycin": {
+                    "value": "tlyA: N236K"
+                  },
+                  "Drug_Resistance": {
+                    "value": "1"
+                  },
                   "country": {
                     "value": ""
                   },
@@ -14696,6 +16288,12 @@
             },
             "strain": "NODE_0000047",
             "traits": {
+              "Capreomycin": {
+                "value": "tlyA: N236K"
+              },
+              "Drug_Resistance": {
+                "value": "1"
+              },
               "country": {
                 "value": ""
               },
@@ -14796,6 +16394,12 @@
         },
         "strain": "NODE_0000045",
         "traits": {
+          "Capreomycin": {
+            "value": "tlyA: N236K"
+          },
+          "Drug_Resistance": {
+            "value": "1"
+          },
           "country": {
             "value": ""
           },
@@ -14847,6 +16451,9 @@
     },
     "strain": "NODE_0000100",
     "traits": {
+      "Drug_Resistance": {
+        "value": "0"
+      },
       "country": {
         "value": ""
       },
