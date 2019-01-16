@@ -1,0 +1,35 @@
+{
+  "title": "Nextrain@KRISP: Analysis of the 2016-2017 Brazil Yellow Fever Virus Outbreak",
+  "color_options": {
+    "gt": {
+      "menuItem": "genotype",
+      "legendTitle": "Genotype",
+      "type": "discrete",
+      "key": "genotype"
+    },
+    "num_date": {
+      "menuItem": "date",
+      "legendTitle": "Sampling date",
+      "type": "continuous",
+      "key": "num_date"
+    },
+    "country": {
+    },
+    "state": {
+    },
+    "host": {
+      "menuItem": "Host Species",
+      "legendTitle": "Host",
+      "type": "discrete",
+      "key": "host"
+    }
+  },
+  "geo": [
+    "country",
+    "state"
+  ],
+  "filters": [
+    "country",
+    "state"
+  ]
+}
